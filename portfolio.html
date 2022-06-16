@@ -1,0 +1,88 @@
+---
+title: Portfolio
+layout: page
+order: 1
+permalink: /portfolio
+---
+
+<style>
+.portfolio {
+  --logo-width: 10rem;
+}
+
+.portfolio > dt {
+  clear: left;
+  font-size: 2em;
+}
+
+.portfolio img {
+  width: var(--logo-width);
+  margin-left: calc(-1rem - var(--logo-width));
+  float: left;
+  margin-bottom: 1em;
+}
+
+.portfolio > * {
+  margin-left: calc(var(--logo-width) + 1rem);
+  position: relative;
+}
+
+.portfolio > dd {
+  margin-bottom: 2em;
+}
+
+</style>
+
+<p>Here is a selection of my major web development projects.</p>
+
+<dl class="portfolio">
+  <dt>
+    <a href="https://liqvidjs.org" target="_blank">
+      <img alt="Liqvid logo: stylized play button" src="https://liqvidjs.org/img/logo.png"/>
+    </a>
+    <a href="https://liqvidjs.org" target="_blank">Liqvid</a>
+  </dt>
+  <dd>
+    Liqvid is a library for creating <em>interactive</em> videos in React. Designed especially for educational content, it features an extensive plugin suite for recording audio/video, <a href="https://epiplexis.xyz/a/gg7/insertion_sort?t=9:28" target="_blank">coding tutorials</a>, cursor motion, and handwriting.
+  </dd>
+  <dt>
+    <a href="https://www.math.brown.edu/ysulyma/f21-math180/" target="_blank">
+      <img alt="Screenshot from video, showing 3d graph of surface" src="https://www.math.brown.edu/ysulyma/f21-math180/img/og/main.png"/>
+    </a>
+    <a href="https://www.math.brown.edu/ysulyma/f21-math180/" target="_blank">MATH 180</a>
+  </dt>
+  <dd>
+    <p>In Fall 2021, I taught a full vector calculus ("Calc III") course asynchronously at Brown University using Liqvid. I wrote, coded, and recorded around 120 videos featuring interactive 3D graphs and animations.</p>
+    
+    <p>I also used <a href="https://www.desmos.com" target="_blank">Desmos</a> in some of the videos (<a href="https://www.math.brown.edu/ysulyma/f21-math180/v/16/4/4/" target="_blank">example</a>). For this, I authored a
+      <a href="https://www.npmjs.com/package/desmos-react" target="_blank">React wrapper</a> and <a href="https://www.npmjs.com/package/@types/desmos" target="_blank">TypeScript definitions</a> for the Desmos API.
+    </p>
+  </dd>
+  <dt>
+    <a href="https://epiplexis.xyz" target="_blank">
+      <img alt="Epiplexis logo: prism" src="/assets/epiplexis.png"/>
+    </a>
+    <a href="https://epiplexis.xyz" target="_blank">Epiplexis</a>
+  </dt>
+  <dd>
+    Epiplexis is my web series on math and coding. It features interactive videos on a variety of math topics, bringing these to life with visualizations and coding demos. It is the reason I created Liqvid.
+  </dd>
+  <!-- <dt>
+    <a href="http://emath.ualberta.ca" target="_blank">
+      <img alt="Linear Algebra" src="http://emath.ualberta.ca/ims/Background.jpg"/>
+    </a>
+    <a href="http://emath.ualberta.ca/" target="_blank">eMath</a>
+  </dt>
+  <dd>
+    eMath is an online textbook that was developed in-house at the University of Alberta. 
+  </dd> -->
+  <dt>
+    <a href="https://www.facebook.com/bearbookapp/" target="_blank">
+      <img alt="Bearbook logo" src="/assets/bearbook.png"/>
+    </a>
+    <a href="https://www.facebook.com/bearbookapp/" target="_blank">Bearbook</a>
+  </dt>
+  <dd>
+    Bearbook was a Facebook app for University of Alberta students. The initial functionality was sharing timetables and finding free blocks with your friends; later, we built a textbook marketplace, a more intuitive Course Directory, and a Schedule Builder. In our heyday, we had over 9,000 active users on campus. Joint work with <a href="https://joeladria.com">Joel Adria</a>.
+  </dd>
+</dl>

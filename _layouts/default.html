@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/assets/png/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/png/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/png/favicon-16x16.png">
+  <link rel="manifest" href="/assets/png/site.webmanifest"> -->
+
+  <script>
+    window.MathJax = {
+      loader: {
+        load: [
+          "[custom]/annotations.js"
+        ],
+        paths: {
+          custom: "https://cdn.jsdelivr.net/gh/ysulyma/mathjax-extensions/"
+        }
+      },
+      options: {
+        enableMenu: false
+      },
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        packages: {"[+]": ["annotate"]}
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

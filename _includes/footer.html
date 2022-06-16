@@ -1,0 +1,53 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+      <div class="footer-col footer-col-1">
+      {%- if site.author %}
+        <ul class="contact-list">
+          {% if site.author.name -%}
+            <li class="p-name">{{ site.author.name | escape }}</li>
+          {% endif -%}
+          {% if site.author.email -%}
+            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+          {%- endif %}
+        </ul>
+
+
+      {%- endif %}
+      </div>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          {% if site.author.university -%}
+            <li class="p-name">{{ site.author.university | escape }}</li>
+          {% endif -%}
+          {% if site.author.department -%}
+            <li class="p-name">{{ site.author.department | escape }}</li>
+          {%- endif %}
+          {% if site.author.building -%}
+            <li class="p-name">{{ site.author.building | escape }}</li>
+          {%- endif %}
+          {% if site.author.street -%}
+            <li class="p-name">{{ site.author.street | escape }}</li>
+          {%- endif %}
+          {% if site.author.city -%}
+            <li class="p-name">{{ site.author.city | escape }}</li>
+          {%- endif %}
+          {% if site.author.country -%}
+            <li class="p-name">{{ site.author.country | escape }}</li>
+          {%- endif %}
+
+        </ul>
+      </div>
+
+    <div class="social-links">
+      {%- include social.html -%}
+    </div>
+
+  </div>
+
+    </div>
+</footer>
