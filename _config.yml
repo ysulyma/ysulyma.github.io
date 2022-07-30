@@ -23,7 +23,7 @@ email: yuri.sulyma@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Full-stack web developer and erstwhile mathematician specializing in interactive videos.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ysulyma.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username: ysulyma
 title_image: https://ysulyma.github.io/assets/headshot.jpg
