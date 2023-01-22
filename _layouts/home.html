@@ -13,24 +13,6 @@ layout: default
       <div class="wrapper">
           <img style="float: right; padding: 10px" width="400" src="assets/headshot.jpg">
           {{ content }}
-
-          {%- if site.posts.size > 0 -%}
-            <ul class="post-list-small">
-              {%- for post in site.posts limit:3 -%}
-              <li>
-                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                <span class="post-meta">{{ post.date | date: date_format }}</span>
-                  <a href="{{ post.url | relative_url }}">
-                      {%- if post.stitle -%}
-                        {{ post.stitle | escape }}
-                      {%- else -%}
-                        {{ post.title | escape }}
-                      {%- endif -%}
-                  </a>
-              </li>
-              {%- endfor -%}
-            </ul>
-            {%- endif -%}
       </div>
   </div>
   {%- endif -%}

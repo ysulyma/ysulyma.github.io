@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Floor, ceiling, slopes, and K-theory</title>
+
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+
+  <!-- The loading of KaTeX is deferred to speed up page rendering -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4"
+    crossorigin="anonymous"></script>
+
+
+  <!-- MathJax -->
+  <script>
+    window.MathJax = {
+      loader: {
+        load: [
+          "[custom]/load-head.js",
+          "[custom]/xypic.js",
+          "[tex]/color.js",
+          "[tex]/html.js",
+        ],
+        paths: {
+          custom: "https://cdn.jsdelivr.net/gh/ysulyma/mathjax-extensions/",
+        },
+      },
+      options: {
+        enableMenu: false,
+      },
+      startup: {
+        typeset: false, // don't perform initial typeset
+      },
+      tex: {
+        packages: {"[+]": ["color", "load-head", "html", "xypic"]},
+      },
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="./symbols.tex" type="math/tex"></script>
+  <script type="module" crossorigin src="/papers/fcsk/assets/index-28304abc.js"></script>
+  <link rel="stylesheet" href="/papers/fcsk/assets/index-7b1126be.css">
+</head>
+
+<body>
+  <div id="root"></div>
+  
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 6">
+<defs><style type="text/css">
+@import "https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css";
+</style></defs><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="1" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >1</text><rect
+    fill="red"
+    x="0.875" y="3.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="2" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >2</text><rect
+    fill="red"
+    x="1.875" y="3.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="3" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >3</text><rect
+    fill="red"
+    x="2.875" y="3.75"
+    height="1" width="0.25"
+    /><rect
+    fill="orange"
+    x="2.875" y="2.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="4" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >4</text><rect
+    fill="red"
+    x="3.875" y="3.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="5" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >5</text><rect
+    fill="red"
+    x="4.875" y="3.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="6" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >6</text><rect
+    fill="red"
+    x="5.875" y="3.75"
+    height="1" width="0.25"
+    /><rect
+    fill="orange"
+    x="5.875" y="2.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="7" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >7</text><rect
+    fill="red"
+    x="6.875" y="3.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="8" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >8</text><rect
+    fill="red"
+    x="7.875" y="3.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="9" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >9</text><rect
+    fill="red"
+    x="8.875" y="3.75"
+    height="1" width="0.25"
+    /><rect
+    fill="orange"
+    x="8.875" y="2.75"
+    height="1" width="0.25"
+    /><rect
+    fill="yellow"
+    x="8.875" y="1.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="10" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >10</text><rect
+    fill="red"
+    x="9.875" y="3.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="11" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >11</text><rect
+    fill="red"
+    x="10.875" y="3.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="12" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >12</text><rect
+    fill="red"
+    x="11.875" y="3.75"
+    height="1" width="0.25"
+    /><rect
+    fill="orange"
+    x="11.875" y="2.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="13" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >13</text><rect
+    fill="red"
+    x="12.875" y="3.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="14" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >14</text><rect
+    fill="red"
+    x="13.875" y="3.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="15" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >15</text><rect
+    fill="red"
+    x="14.875" y="3.75"
+    height="1" width="0.25"
+    /><rect
+    fill="orange"
+    x="14.875" y="2.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="16" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >16</text><rect
+    fill="red"
+    x="15.875" y="3.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="17" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >17</text><rect
+    fill="red"
+    x="16.875" y="3.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="18" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >18</text><rect
+    fill="red"
+    x="17.875" y="3.75"
+    height="1" width="0.25"
+    /><rect
+    fill="orange"
+    x="17.875" y="2.75"
+    height="1" width="0.25"
+    /><rect
+    fill="yellow"
+    x="17.875" y="1.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="19" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >19</text><rect
+    fill="red"
+    x="18.875" y="3.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="20" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >20</text><rect
+    fill="red"
+    x="19.875" y="3.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="21" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >21</text><rect
+    fill="red"
+    x="20.875" y="3.75"
+    height="1" width="0.25"
+    /><rect
+    fill="orange"
+    x="20.875" y="2.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="22" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >22</text><rect
+    fill="red"
+    x="21.875" y="3.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="23" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >23</text><rect
+    fill="red"
+    x="22.875" y="3.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="24" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >24</text><rect
+    fill="red"
+    x="23.875" y="3.75"
+    height="1" width="0.25"
+    /><rect
+    fill="orange"
+    x="23.875" y="2.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="25" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >25</text><rect
+    fill="red"
+    x="24.875" y="3.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="26" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >26</text><rect
+    fill="red"
+    x="25.875" y="3.75"
+    height="1" width="0.25"
+    /><text
+    dominant-baseline="hanging" text-anchor="middle"
+    x="27" y="5"
+    font-family="KaTeX_Main" font-size="0.5" fill="black"
+    >27</text><rect
+    fill="red"
+    x="26.875" y="3.75"
+    height="1" width="0.25"
+    /><rect
+    fill="orange"
+    x="26.875" y="2.75"
+    height="1" width="0.25"
+    /><rect
+    fill="yellow"
+    x="26.875" y="1.75"
+    height="1" width="0.25"
+    /><rect
+    fill="Green"
+    x="26.875" y="0.75"
+    height="1" width="0.25"
+    /></svg>

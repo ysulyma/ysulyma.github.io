@@ -10,15 +10,22 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/png/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/png/favicon-16x16.png">
   <link rel="manifest" href="/assets/png/site.webmanifest"> -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+  <link href="/style.css" rel="stylesheet" />
+  
   <script>
     window.MathJax = {
       loader: {
         load: [
-          "[custom]/annotations.js"
+          "[custom]/annotations.js",
+          "[tex]/upgreek",
+          "[xy]/xypic.js"
         ],
         paths: {
-          custom: "https://cdn.jsdelivr.net/gh/ysulyma/mathjax-extensions/"
+          custom: "https://cdn.jsdelivr.net/gh/ysulyma/mathjax-extensions/",
+          xy: "https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3@3.0.1/build/"
         }
       },
       options: {
@@ -26,13 +33,88 @@
       },
       tex: {
         inlineMath: [['$', '$'], ['\\(', '\\)']],
-        packages: {"[+]": ["annotate"]}
+        packages: {"[+]": ["annotate", "upgreek", "xypic"]}
       }
     };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
   <body>
+    <div hidden>\[
+% misc
+\newcommand{\~}{\widetilde}
+\newcommand{\&lt;}{\left\langle}
+\newcommand{\&gt;}{\right\rangle}
+\newcommand{\lc}{\lceil}
+\newcommand{\rc}{\rceil}
+\newcommand{\lf}{\lfloor}
+\newcommand{\rf}{\rfloor}
+\newcommand{\xra}{\xrightarrow}
+
+% single letters
+\newcommand{\A}{\mathbf A}
+\newcommand{\C}{\mathbf C}
+\newcommand{\F}{\mathbf F}
+\newcommand{\G}{\mathbf G}
+\newcommand{\N}{\mathbf N}
+\newcommand{\O}{\mathcal O}
+\newcommand{\P}{\mathcal P}
+\newcommand{\Q}{\mathbf Q}
+\newcommand{\R}{\mathbf R}
+\newcommand{\S}{\mathbf S}
+\newcommand{\W}{\mathbf W}
+\newcommand{\Z}{\mathbf Z}
+\newenvironment{bmatrix*}{\left[\begin{array}{rr}}{\end{array}\right]}
+
+% algebra
+\DeclareMathOperator{\K}{K}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Ext}{Ext}
+\DeclareMathOperator{\Tor}{Tor}
+%\DeclareMathOperator{\ker}{ker}
+%\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\coker}{coker}
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\Spf}{Spf}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\Gal}{Gal}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\SL}{SL}
+\DeclareMathOperator{\gr}{gr}
+
+\newcommand{\psr}[1]{[\![#1]\!]}
+\newcommand{\tnsr}{\otimes}
+\newcommand{\Fil}{\mathsf{F}}
+
+% THH
+\DeclareMathOperator{\THH}{THH}
+\DeclareMathOperator{\TC}{TC}
+\newcommand{\TCmin}{\TC^-}
+\DeclareMathOperator{\TF}{TF}
+\DeclareMathOperator{\TP}{TP}
+\DeclareMathOperator{\TR}{TR}
+\DeclareMathOperator{\TS}{TS}
+
+% prismatic
+\newcommand{\Nyg}{\mathcal N}
+\newcommand{\prism}{
+  \class{prism}{\Delta}
+}
+\newcommand{\syn}{\mathrm{syn}}
+
+% equivariant
+\newcommand{\rog}{\bigstar}
+\newcommand{\regconn}[1]{\mathop{\mathsf{P}_{#1}}}
+\newcommand{\regslice}[1]{\mathop{\mathsf{P}^{#1}_{#1}}}
+\newcommand{\m}{\underline}
+\newcommand{\mpi}{\m\pi}
+
+% spaces
+\newcommand{\RP}{\mathbf{RP}}
+\newcommand{\CP}{\mathbf{CP}}
+\]</div>
+
 
     {%- include header.html -%}
 
