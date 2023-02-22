@@ -1,0 +1,76 @@
+---
+title: Blog
+layout: page
+order: 3
+permalink: /blog
+---
+
+Eventually these will get turned into fancy interactive videos and migrated to <a href="https://epiplexis.xyz/" target="_blank">Epiplexis</a>; for now, it's easier to get content out this way.,
+
+<h2>Geometry and Graphics</h2>
+
+<ol class="post-list-small">
+  {%- for post in site.posts | sort -%}
+  {%- if post.path contains 'gng/' -%}
+  {%- unless post.draft -%}
+  <li>
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    <!-- <span class="post-meta">{{ post.date | date: date_format }}</span> -->
+    <a href="{{ post.url | relative_url }}">
+      {%- if post.stitle -%}
+      {{ post.stitle | escape }}
+      {%- else -%}
+      {{ post.title | escape }}
+      {%- endif -%}
+    </a>
+  </li>
+  {%- endunless -%}
+  {%- endif -%}
+  {%- endfor -%}
+</ol>
+<!-- 
+<h2>What do I study?</h2>
+
+<h3>Episode 1: The $q$-Legendre principle</h3>
+<ol>
+  {%- for post in site.posts reversed -%}
+  {%- if post.path contains 'what-study/' -%}
+  <li>
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    <span class="post-meta">{{ post.date | date: date_format }}</span>
+    <a href="{{ post.url | relative_url }}">
+      {%- if post.stitle -%}
+      {{ post.stitle | escape }}
+      {%- else -%}
+      {{ post.title | escape }}
+      {%- endif -%}
+    </a>
+  </li>
+  {%- endif -%}
+  {%- endfor -%} -->
+  <!-- <li>Modular arithmetic</li>
+  <li>Floor and ceiling</li>
+  <li>Legendre's formula</li>
+  <li>$q$-analogues</li>
+  <li>The $q$-Legendre principle</li>
+  <li>Prisms</li> -->
+</ol>
+<!-- 
+<h3>Episode 2: Homotopy theory</h3>
+
+<ol>
+  <li>Geometry</li>
+  <li>Topology</li>
+  <li>Homotopy theory</li>
+  <li>Groups</li>
+  <li>Equivariance</li>
+  <li>Slice filtration</li>
+  <li>Bökstedt periodicity</li>
+</ol> -->
+
+<!-- <h3>Episode 3: The function analogy</h3>
+
+<ol>
+  <li>$p$-adic numbers</li>
+  <li></li>
+</ol> -->

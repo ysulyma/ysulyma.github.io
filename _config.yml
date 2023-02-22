@@ -32,16 +32,11 @@ title_image: https://ysulyma.github.io/assets/headshot.jpg
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-toc
 
 author:
     name: Yuri Sulyma
     email: yuri.sulyma@protonmail.com
-    # university: Brown University
-    # department: Department of Mathematics
-    # building: Box 1917
-    # street:  151 Thayer Street
-    # city: Providence, RI 02912
-    # country: USA
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
