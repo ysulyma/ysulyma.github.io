@@ -10,12 +10,12 @@ Eventually these will get turned into fancy interactive videos and migrated to <
 <h2>Geometry and Graphics</h2>
 
 <ol class="post-list-small">
-  {%- for post in site.posts | sort -%}
+  {%- for post in site.posts reversed -%}
   {%- if post.path contains 'gng/' -%}
   {%- unless post.draft -%}
   <li>
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    <!-- <span class="post-meta">{{ post.date | date: date_format }}</span> -->
+    <span class="post-meta">{{ post.date | date: date_format }}</span>
     <a href="{{ post.url | relative_url }}">
       {%- if post.stitle -%}
       {{ post.stitle | escape }}
