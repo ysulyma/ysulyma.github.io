@@ -37,6 +37,10 @@ plugins:
 author:
     name: Yuri Sulyma
     email: yuri.sulyma@protonmail.com
+    twitter: YuriSulyma
+
+twitter:
+  username: YuriSulyma
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
