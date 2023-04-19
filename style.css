@@ -7,9 +7,12 @@ main {
   --secondary: #aaa;
 
   --border: #ddd;
-  --radius: .4rem;
+  --radius: 4px;
 }
 
+h2 {
+  margin-top: .5em;
+}
 
 figure {
   border-radius: .2rem;
@@ -24,7 +27,7 @@ iframe {
   border: none;
   margin: .5em 0;
   width: 120% !important;
-  transform: translateX(calc(-50% + 100% / 2 / 1.2));
+  transform:translateX(calc(-50% + 100% / 2 / 1.2));
 }
 
 dfn {
@@ -33,6 +36,17 @@ dfn {
 }
 
 /* blocks */
+.block {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin: 1em auto;
+  padding: 1em;
+}
+
+.block > header {
+  font-weight: bold;
+}
+
 .definition {
   background: #eee;
   border: 1px solid var(--border);
@@ -42,6 +56,50 @@ dfn {
 }
 
 .definition > header {
+  font-weight: bold;
+}
+
+.example {
+  background: #eef;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin: 1em auto;
+  padding: 1em;
+}
+
+.example > header {
+  font-weight: bold;
+}
+
+.example li {
+  margin-top: .5em;
+}
+
+.exercise {
+  background: #eef;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin: 1em auto;
+  padding: 1em;
+}
+
+.exercise > header {
+  font-weight: bold;
+}
+
+.remark {
+  background: #eef;
+}
+
+.warning {
+  background: #fee;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin: 1em auto;
+  padding: 1em;
+}
+
+.warning > header {
   font-weight: bold;
 }
 
@@ -83,6 +141,10 @@ dfn {
   font-weight: bold;
 }
 
+.MathJax {
+  font-size: 130% !important;
+}
+
 /* \prism */
 .prism {
 	background-image: url('data:image/svg+xml;utf8,%3Csvg%20viewBox%3D%220%200%2035.795%2044%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20style%3D%22color%3A%23000%3Bfill%3A%23000%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3B-inkscape-stroke%3Anone%22%20d%3D%22M76.965%20122.135a1.05%201.05%200%200%200-.974.66l-14.717%2036.741a1.05%201.05%200%200%200%20.974%201.442l29.517.023a1.05%201.05%200%200%200%20.976-1.441L77.94%20122.794a1.05%201.05%200%200%200-.975-.659zm.005%203.87%202.544%206.32-10.65%2026.557-5.065-.004zm3.624%209.004%209.618%2023.89-19.194-.015z%22%20transform%3D%22translate(-59.11%20-119.568)%22%2F%3E%3C%2Fsvg%3E');
@@ -91,4 +153,51 @@ dfn {
 	width: calc(1em * 35.795 / 44);
 	background-repeat: no-repeat;
 	vertical-align: bottom;
+}
+
+/* code blocks */
+.highlight {
+  background: #eee;
+}
+
+.highlight .cm {
+  color: forestgreen;
+}
+
+.highlight .kd {
+  color: cornflowerblue;
+  font-weight: normal;
+}
+
+.highlight .nx {
+  color: darkorchid;
+}
+
+.highlight .o {
+  color: deeppink;
+}
+
+.alpha-list {
+  counter-reset: alpha-list;
+  list-style: none;
+}
+
+.alpha-list li {
+  counter-increment: alpha-list;
+  margin: 1em 0;
+}
+
+.alpha-list li::before {
+  content: counter(alpha-list, lower-alpha) ")";
+  margin-right: .5em;
+}
+
+/* utility styles */
+.bd-1 {
+  border: 1px solid #ddd !important;
+  border-radius: 4px;
+}
+
+.sh {
+  box-shadow: 0 0 0.2em rgba(0, 0, 0, .2);
 }
