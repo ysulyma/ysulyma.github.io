@@ -14,7 +14,7 @@ Eventually these will get turned into fancy interactive videos and migrated to <
   {%- if post.path contains 'gng/' -%}
   {%- unless post.draft -%}
   <li>
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %y" -%}
     <span class="post-meta">{{ post.date | date: date_format }}</span>
     <a href="{{ post.url | relative_url }}">
       {%- if post.stitle -%}
@@ -28,10 +28,35 @@ Eventually these will get turned into fancy interactive videos and migrated to <
   {%- endif -%}
   {%- endfor -%}
 </ol>
-<!-- 
+
+<h2>Short exact sequences</h2>
+
+<ol class="post-list-small">
+  {%- for post in site.posts reversed -%}
+  {%- if post.path contains 'ses' -%}
+  {%- unless post.draft -%}
+  <li>
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %y" -%}
+    <span class="post-meta">{{ post.date | date: date_format }}</span>
+    <a href="{{ post.url | relative_url }}">
+      {%- if post.stitle -%}
+      {{ post.stitle | escape }}
+      {%- else -%}
+      {{ post.title | escape }}
+      {%- endif -%}
+    </a>
+  </li>
+  {%- endunless -%}
+  {%- endif -%}
+  {%- endfor -%}
+</ol>
+
+
+{% if false %}
 <h2>What do I study?</h2>
 
 <h3>Episode 1: The $q$-Legendre principle</h3>
+-->
 <ol>
   {%- for post in site.posts reversed -%}
   {%- if post.path contains 'what-study/' -%}
@@ -47,7 +72,7 @@ Eventually these will get turned into fancy interactive videos and migrated to <
     </a>
   </li>
   {%- endif -%}
-  {%- endfor -%} -->
+  {%- endfor -%} 
   <!-- <li>Modular arithmetic</li>
   <li>Floor and ceiling</li>
   <li>Legendre's formula</li>
@@ -55,7 +80,7 @@ Eventually these will get turned into fancy interactive videos and migrated to <
   <li>The $q$-Legendre principle</li>
   <li>Prisms</li> -->
 </ol>
-<!-- 
+<!--
 <h3>Episode 2: Homotopy theory</h3>
 
 <ol>
@@ -74,3 +99,4 @@ Eventually these will get turned into fancy interactive videos and migrated to <
   <li>$p$-adic numbers</li>
   <li></li>
 </ol> -->
+{% endif %}
