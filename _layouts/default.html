@@ -35,6 +35,16 @@
     };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>(() => {
+    const query = window.matchMedia("(prefers-color-scheme: dark)");
+    
+    const setTheme = () => {
+      document.documentElement.classList.toggle("dark-theme", query.matches);
+    };
+    
+    query.addEventListener("change", setTheme);
+    setTheme();
+  })();</script>
 
   <body>
     <div hidden>\[
@@ -122,6 +132,7 @@
 
 % equivariant
 \newcommand{\rog}{\bigstar}
+\DeclareMathOperator{\RO}{RO}
 \newcommand{\regconn}[1]{\mathop{\mathsf{P}_{#1}}}
 \newcommand{\regslice}[1]{\mathop{\mathsf{P}^{#1}_{#1}}}
 \newcommand{\m}{\underline}
@@ -134,9 +145,9 @@
 % coding
 \newcommand{\r}[1]{\mathrm{#1}}
 \newcommand{\qeq}{\mathrel{\text{“=”}}}
-\newcommand{\red}{\textcolor{red}}
-\newcommand{\green}{\textcolor{green}}
-\newcommand{\blue}{\textcolor{blue}}
+\newcommand{\red}{\textcolor{var(--red9)}}
+\newcommand{\green}{\textcolor{var(--green10)}}
+\newcommand{\blue}{\textcolor{var(--blue11)}}
 \]</div>
 
 
