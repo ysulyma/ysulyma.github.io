@@ -35,16 +35,7 @@
     };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <script>(() => {
-    const query = window.matchMedia("(prefers-color-scheme: dark)");
-    
-    const setTheme = () => {
-      document.documentElement.classList.toggle("dark-theme", query.matches);
-    };
-    
-    query.addEventListener("change", setTheme);
-    setTheme();
-  })();</script>
+  <script src="/color-scheme.js"></script>
 
   <body>
     <div hidden>\[

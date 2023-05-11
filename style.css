@@ -77,11 +77,21 @@ figure {
   padding: 0.6em;
 }
 
+figcaption {
+  color: #000;
+}
+
 iframe {
   border: none;
   margin: 0.5em 0;
   width: 120% !important;
   transform: translateX(calc(-50% + 100% / 2 / 1.2));
+}
+
+.magic-svg {
+  margin: 0.5em 0;
+  width: 100% !important;
+  transform: translateX(calc(-50% + 100% / 2));
 }
 
 dfn {
