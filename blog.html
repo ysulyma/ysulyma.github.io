@@ -52,14 +52,14 @@ Eventually these will get turned into fancy interactive videos and migrated to <
 </ol>
 
 
-{% if false %}
+{% if true %}
 <h2>What do I study?</h2>
 
 <h3>Episode 1: The $q$-Legendre principle</h3>
--->
 <ol>
   {%- for post in site.posts reversed -%}
   {%- if post.path contains 'what-study/' -%}
+  {%- unless post.draft -%}
   <li>
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
     <span class="post-meta">{{ post.date | date: date_format }}</span>
@@ -71,6 +71,7 @@ Eventually these will get turned into fancy interactive videos and migrated to <
       {%- endif -%}
     </a>
   </li>
+  {%- endunless -%}
   {%- endif -%}
   {%- endfor -%} 
   <!-- <li>Modular arithmetic</li>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Factorials
+draft: true
 ---
 
 ## Permutations
