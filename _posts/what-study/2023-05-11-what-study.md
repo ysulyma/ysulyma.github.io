@@ -2,7 +2,7 @@
 layout: post
 title: "What do I study?"
 summary: "tl;dr: using calculus to detect finitely many things representing the same thing"
-image: /assets/social/what-study.png
+image: /assets/social/what-study-2.png
 ---
 
 Over the years, friends, family, and strangers have asked me if I can explain the math that I do. This is tricky; because math is so cumulative, even professional mathematicians usually can't understand each other's work very well unless they work in the same field. (This has the advantage of making it difficult to talk about work at parties.) This series is my attempt to share the stuff I think about and why I think it's so fun.
