@@ -52,6 +52,8 @@ Let's start by thinking about how we represent points on a shape:
 
 <iframe height="600" src="https://ysulyma.github.io/epiplexis/what-study/topology-demo/dist/"></iframe>
 
+[Source](https://github.com/ysulyma/epiplexis/tree/main/what-study/topology-demo)
+
 We can represent a point on the blue curve by a number between 0 and 1 (between 0% and 100% along the curve, starting from the left). This is the same way we'd represent points on a straight line segment. We can _almost_ do the same thing on the purple star, but now 0% and 100% represent the same point. This is similar to how $0^\circ,$ $360^\circ,$ $720^\circ,$ etc. all correspond to the same point on the circle.
 
 <dfn>Topology</dfn> is the study of "how data gets represented". The blue curve is topologically equivalent to a straight line, and the purple curve is topologically equivalent to a circle. Topology is also often described as "rubber-band geometry": topology considers two shapes to be the same if each can be transformed into the other by twisting or bending, _but no cutting or tearing_.
