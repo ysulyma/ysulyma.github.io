@@ -149,7 +149,8 @@ dfn {
 }
 
 .remark {
-  background: #eef;
+  background: var(--indigo4);
+  border: 1px solid var(--indigo6);
 }
 
 .warning {
@@ -287,4 +288,21 @@ pre, code {
 
 .sh {
   box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+}
+
+:root.dark-theme table {
+  color: #fff;
+}
+
+:root.dark-theme table th {
+  background-color: #202020;
+  border-color: #303030;
+}
+
+:root.dark-theme table tr:nth-child(even) {
+  background-color: #191919;
+}
+
+:root.dark-theme table td {
+  border-color: #303030;
 }
