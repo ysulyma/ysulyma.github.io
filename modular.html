@@ -7,7 +7,6 @@
     <title>Document</title>
     <style>
       canvas {
-        background-color: #eee;
         height: 100%;
         width: 100%;
       }
@@ -18,42 +17,51 @@
     <script>
       const {PI} = Math;
       const canvas = document.querySelector("canvas");
-      const rect = canvas.getBoundingClientRect();
-
-      const {height, width} = rect;
-
-      canvas.height = rect.height;
-      canvas.width = rect.width;
-
-      const minX = -2;
-      const maxX = 2;
-      const maxY = 2;
-      const minY = 0;
-      const divisions = 3;
-
-      const padding = 10;
-
       const ctx = canvas.getContext("2d");
+      
+      /** Set canvas dimensions. */
+      function resize() {
+        const rect = canvas.getBoundingClientRect();
+        canvas.height = rect.height;
+        canvas.width = rect.width;
+      }
+      
+      /** Draw the graph. */
+      function repaint() {
+        resize();
+        
+        const minX = -2;
+        const maxX = 2;
+        const maxY = 2;
+        const minY = 0;
+        const divisions = 3;
 
-      const scaleH = width / (maxX - minX);
-      const scaleV = height / (maxY - minY);
+        const padding = 10;
 
-      ctx.beginPath();
-      ctx.strokeStyle = "blue";
-      ctx.stroke;
+        const scaleH = canvas.width / (maxX - minX);
+        const scaleV = canvas.height / (maxY - minY);
 
-      for (let level = 0; level <= divisions; ++level) {
-        const radius = 2 ** -level;
-        for (let x = minX; x <= maxX; x += radius) {
-          ctx.arc(
-            padding + scaleH * (x - minX),
-            height - padding,
-            scaleH * radius,
-            -PI,
-            0,
-          );
-          ctx.stroke();
+        ctx.beginPath();
+        ctx.strokeStyle = "blue";
+
+        for (let level = 0; level <= divisions; ++level) {
+          const radius = 2 ** -level;
+          for (let x = minX; x <= maxX; x += radius) {
+            ctx.arc(
+              padding + scaleH * (x - minX),
+              height - padding,
+              scaleH * radius,
+              -PI,
+              0,
+            );
+            ctx.stroke();
+          }
         }
+        
+        repaint();
+        
+        // resize and redraw when dimensions change
+        window.addEventListener("resize", repaint);
       }
     </script>
   </body>
