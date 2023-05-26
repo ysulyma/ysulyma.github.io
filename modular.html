@@ -29,6 +29,7 @@
       /** Draw the graph. */
       function repaint() {
         resize();
+        const {height, width} = canvas;
         
         const minX = -2;
         const maxX = 2;
@@ -38,8 +39,8 @@
 
         const padding = 10;
 
-        const scaleH = canvas.width / (maxX - minX);
-        const scaleV = canvas.height / (maxY - minY);
+        const scaleH = width / (maxX - minX);
+        const scaleV = height / (maxY - minY);
 
         ctx.beginPath();
         ctx.strokeStyle = "blue";
