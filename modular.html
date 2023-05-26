@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      canvas {
+        background-color: #eee;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas></canvas>
+    <script>
+      const {PI} = Math;
+      const canvas = document.querySelector("canvas");
+      const rect = canvas.getBoundingClientRect();
+
+      const {height, width} = rect;
+
+      canvas.height = rect.height;
+      canvas.width = rect.width;
+
+      const minX = -2;
+      const maxX = 2;
+      const maxY = 2;
+      const minY = 0;
+      const divisions = 3;
+
+      const padding = 10;
+
+      const ctx = canvas.getContext("2d");
+
+      const scaleH = width / (maxX - minX);
+      const scaleV = height / (maxY - minY);
+
+      ctx.beginPath();
+      ctx.strokeStyle = "blue";
+      ctx.stroke;
+
+      for (let level = 0; level <= divisions; ++level) {
+        const radius = 2 ** -level;
+        for (let x = minX; x <= maxX; x += radius) {
+          ctx.arc(
+            padding + scaleH * (x - minX),
+            height - padding,
+            scaleH * radius,
+            -PI,
+            0,
+          );
+          ctx.stroke();
+        }
+      }
+    </script>
+  </body>
+</html>
