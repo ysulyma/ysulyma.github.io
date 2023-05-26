@@ -57,12 +57,13 @@
             ctx.stroke();
           }
         }
-        
-        repaint();
-        
-        // resize and redraw when dimensions change
-        window.addEventListener("resize", repaint);
       }
+      
+      // initial paint
+      repaint();
+
+      // resize and redraw when dimensions change
+      window.addEventListener("resize", repaint);
     </script>
   </body>
 </html>
