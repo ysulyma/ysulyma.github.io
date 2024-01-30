@@ -102,3 +102,27 @@ Eventually these will get turned into fancy interactive videos and migrated to <
   <li></li>
 </ol> -->
 {% endif %}
+
+{% if true %}
+<h2>Research logs</h2>
+
+<ol>
+  {%- for post in site.posts reversed -%}
+  {%- if post.path contains 'research-logs/' -%}
+  {%- unless post.draft -%}
+  <li>
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    <span class="post-meta">{{ post.date | date: date_format }}</span>
+    <a href="{{ post.url | relative_url }}">
+      {%- if post.stitle -%}
+      {{ post.stitle | escape }}
+      {%- else -%}
+      {{ post.title | escape }}
+      {%- endif -%}
+    </a>
+  </li>
+  {%- endunless -%}
+  {%- endif -%}
+  {%- endfor -%} 
+</ol>
+{% endif %}

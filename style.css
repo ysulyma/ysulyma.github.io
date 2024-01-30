@@ -1,23 +1,23 @@
 @import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/blue.css";
-@import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/blueDark.css";
+@import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/blue-dark.css";
 @import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/gray.css";
-@import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/grayDark.css";
+@import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/gray-dark.css";
 @import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/green.css";
-@import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/greenDark.css";
+@import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/green-dark.css";
 @import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/indigo.css";
-@import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/indigoDark.css";
+@import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/indigo-dark.css";
 @import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/pink.css";
-@import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/pinkDark.css";
+@import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/pink-dark.css";
 @import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/plum.css";
-@import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/plumDark.css";
+@import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/plum-dark.css";
 @import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/purple.css";
-@import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/purpleDark.css";
+@import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/purple-dark.css";
 @import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/red.css";
-@import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/redDark.css";
+@import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/red-dark.css";
 @import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/teal.css";
-@import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/tealDark.css";
+@import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/teal-dark.css";
 @import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/violet.css";
-@import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/violetDark.css";
+@import "https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/violet-dark.css";
 
 main {
   /* font-family: "Inter" !important; */
@@ -33,26 +33,26 @@ main {
 
 /* Jekyll colors */
 body {
-  background: var(--gray1);
-  color: var(--gray12);
+  background: var(--gray-1);
+  color: var(--gray-12);
 }
 
 
 .site-header {
   border-top: none;
-  border-bottom-color: var(--gray5) !important;
+  border-bottom-color: var(--gray-5) !important;
 }
 
 .site-title {
-  color: var(--gray11) !important;
+  color: var(--gray-11) !important;
 }
 
 .site-nav .page-link {
-  color: var(--gray12);
+  color: var(--gray-12);
 }
 
 .post-meta {
-  color: var(--gray11);
+  color: var(--gray-11);
 }
 
 h2 {
@@ -60,11 +60,11 @@ h2 {
 }
 
 a:link, a:visited {
-  color: var(--blue9);
+  color: var(--blue-9);
 }
 
 a:link:hover, a:visited:hover  {
-  color: var(--blue8);
+  color: var(--blue-8);
 }
 
 figure {
@@ -117,13 +117,13 @@ dfn {
 }
 
 .definition {
-  background: var(--green5);
-  border: 1px solid var(--green7);
+  background: var(--green-5);
+  border: 1px solid var(--green-7);
 }
 
 .example {
-  background: var(--indigo4);
-  border: 1px solid var(--indigo6);
+  background: var(--indigo-4);
+  border: 1px solid var(--indigo-6);
 }
 
 .example > header {
@@ -139,8 +139,8 @@ dfn {
 }
 
 .exercise {
-  background: var(--plum6);
-  border: 1px solid var(--plum7);
+  background: var(--plum-6);
+  border: 1px solid var(--plum-11);
 }
 
 .exercise > header {
@@ -149,13 +149,13 @@ dfn {
 }
 
 .remark {
-  background: var(--indigo4);
-  border: 1px solid var(--indigo6);
+  background: var(--indigo-4);
+  border: 1px solid var(--indigo-6);
 }
 
 .warning {
-  background: var(--red4);
-  border: 1px solid var(--red6);
+  background: var(--red-4);
+  border: 1px solid var(--red-6);
 }
 
 .warning > header {
@@ -221,14 +221,14 @@ dfn {
 
 /* code blocks */
 pre, code {
-	background-color: var(--gray2);
-	border-color: var(--gray4);
-	color: var(--gray12);
+	background-color: var(--gray-2);
+	border-color: var(--gray-4);
+	color: var(--gray-12);
 }
 
 .highlight {
-  background: var(--gray2) !important;
-  color: var(--gray12);
+  background: var(--gray-2) !important;
+  color: var(--gray-12);
 }
 
 .highlight pre, .highlight code {
@@ -236,29 +236,38 @@ pre, code {
 }
 
 .highlight .cm {
-  color: var(--green9);
+  color: var(--green-9);
+}
+
+.highlight .k {
+  color: var(--violet-11);
+  font-weight: normal;
 }
 
 .highlight .kd {
-  color: cornflowerblue;
+  color: var(--blue-11);
+  font-weight: normal;
+}
+
+.highlight .kr {
+  color: var(--pink-9);
   font-weight: normal;
 }
 
 .highlight .mi {
-	color: var(--teal9);
+	color: var(--pink-11);
+}
+
+.highlight .na {
+  color: var(--indigo-10);
 }
 
 .highlight .nb {
-  color: var(--blue9);
-}
-
-
-.highlight .nb {
-  color: var(--indigo11);
+  color: var(--plum-11);
 }
 
 .highlight .nx {
-  color: var(--gray12);
+  color: var(--gray-12);
 }
 
 .highlight .o {
@@ -282,7 +291,7 @@ pre, code {
 
 /* utility styles */
 .bd-1 {
-  border: 1px solid var(--gray11) !important;
+  border: 1px solid var(--gray-11) !important;
   border-radius: 4px;
 }
 
@@ -305,4 +314,8 @@ pre, code {
 
 :root.dark-theme table td {
   border-color: #303030;
+}
+
+.experts {
+  color: var(--gray-10);
 }
