@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transfer systems</title>
+
+  <!-- MathJax -->
+  <script>
+    window.MathJax = {
+      loader: {
+        load: [
+          "[custom]/load-head.js",
+          "[custom]/xypic.js",
+          "[tex]/color.js",
+          "[tex]/html.js",
+        ],
+        paths: {
+          custom: "https://cdn.jsdelivr.net/gh/ysulyma/mathjax-extensions/",
+        },
+      },
+      options: {
+        enableMenu: false,
+      },
+      startup: {
+        typeset: false, // don't perform initial typeset
+      },
+      tex: {
+        packages: {"[+]": ["color", "load-head", "html", "xypic"]},
+      },
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script type="module" crossorigin src="/assets/index-BmOHLSV1.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-A7XsBBeh.css">
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
