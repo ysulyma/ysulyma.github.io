@@ -71,7 +71,12 @@
   </head>
   <body>
     <main>
-      <iframe src="./ractive/" height="400" width="800"></iframe>
+      <iframe
+        id="ractive-iframe"
+        src="./ractive/"
+        height="400"
+        width="800"
+      ></iframe>
 
       <p>
         Play around with different values in the matrix to see how the linear
@@ -95,10 +100,10 @@
         </p>
       </div>
 
-      <p>
-        Change image:
-        <input id="image" placeholder="Enter a URL" size="80" type="url" />
-      </p>
+      <!-- <p> -->
+      <!--   Change image: -->
+      <!--   <input id="image" placeholder="Enter a URL" size="80" type="url" /> -->
+      <!-- </p> -->
 
       <p>Here are some examples of matrix transformations.</p>
 
@@ -238,182 +243,185 @@
 
       MathJax.Hub.Queue(function () {
         Module.import("ractive").then(function (Ractive) {
-          Ractive(document.querySelector("iframe")).then(function (api) {
-            var PRECISION = 4; // for rounding
-            var ENTER = 13;
+          Ractive(document.getElementById("ractive-iframe")).then(
+            function (api) {
+              var PRECISION = 4; // for rounding
+              var ENTER = 13;
 
-            // eigenvector color coding
-            var eColor1 = "\\color[rgb]{1, 0, 0}",
-              eColor2 = "\\color[rgb]{0, 0.35, 1}";
+              // eigenvector color coding
+              var eColor1 = "\\color[rgb]{1, 0, 0}",
+                eColor2 = "\\color[rgb]{0, 0.35, 1}";
 
-            var _Utils = Utils;
-            var _Utils$selectors = _Utils.selectors;
-            var $ = _Utils$selectors.$;
-            var $$ = _Utils$selectors.$$;
+              var _Utils = Utils;
+              var _Utils$selectors = _Utils.selectors;
+              var $ = _Utils$selectors.$;
+              var $$ = _Utils$selectors.$$;
 
-            /* set up behaviours */
+              /* set up behaviours */
 
-            $$("input.matrix-entry").forEach(function (input) {
-              input.addEventListener("keydown", function (e) {
-                if (e.keyCode !== ENTER) return;
-                applyMatrix();
+              $$("input.matrix-entry").forEach(function (input) {
+                input.addEventListener("keydown", function (e) {
+                  if (e.keyCode !== ENTER) return;
+                  applyMatrix();
+                });
               });
-            });
 
-            $("input#image").addEventListener("keydown", function (e) {
-              if (e.keyCode !== ENTER) return true;
-              if (e.target.matches(":invalid")) return true;
+              $("input#image").addEventListener("keydown", function (e) {
+                if (e.keyCode !== ENTER) return true;
+                if (e.target.matches(":invalid")) return true;
 
-              var url = e.target.value;
-              if (url === "") return;
-              api.updateImage("/cors.php?url=" + url);
-            });
-
-            $$("input.example").forEach(function (input) {
-              input.addEventListener("keydown", function (e) {
-                if (e.keyCode !== ENTER) return;
-
-                var _examples$e$target$da = examples[e.target.dataset.type](
-                  e.target.value,
-                );
-
-                var _examples$e$target$da2 = _slicedToArray(
-                  _examples$e$target$da,
-                  4,
-                );
-
-                var a = _examples$e$target$da2[0];
-                var b = _examples$e$target$da2[1];
-                var c = _examples$e$target$da2[2];
-                var d = _examples$e$target$da2[3];
-
-                var o = {a: a, b: b, c: c, d: d};
-
-                for (var entry in o) {
-                  $("#" + entry).value = Math.round10(o[entry], -PRECISION);
-                }
-                applyMatrix();
+                var url = e.target.value;
+                if (url === "") return;
+                api.updateImage("/cors.php?url=" + url);
               });
-            });
 
-            // MathJax input plugin doesn't let us supply many attrs
-            $("#a").setAttribute("tabindex", 1);
-            $("#b").setAttribute("tabindex", 2);
-            $("#c").setAttribute("tabindex", 3);
-            $("#d").setAttribute("tabindex", 4);
+              $$("input.example").forEach(function (input) {
+                input.addEventListener("keydown", function (e) {
+                  if (e.keyCode !== ENTER) return;
 
-            var _iteratorNormalCompletion = true;
-            var _didIteratorError = false;
-            var _iteratorError = undefined;
+                  var _examples$e$target$da = examples[e.target.dataset.type](
+                    e.target.value,
+                  );
 
-            try {
-              for (
-                var _iterator = $$(".matrix-entry")[Symbol.iterator](), _step;
-                !(_iteratorNormalCompletion = (_step = _iterator.next()).done);
-                _iteratorNormalCompletion = true
-              ) {
-                var input = _step.value;
+                  var _examples$e$target$da2 = _slicedToArray(
+                    _examples$e$target$da,
+                    4,
+                  );
 
-                input.setAttribute("pattern", "^-?[.\\d]+$");
-              } // disallow non-numeric inputs
+                  var a = _examples$e$target$da2[0];
+                  var b = _examples$e$target$da2[1];
+                  var c = _examples$e$target$da2[2];
+                  var d = _examples$e$target$da2[3];
 
-              /* application function */
-            } catch (err) {
-              _didIteratorError = true;
-              _iteratorError = err;
-            } finally {
+                  var o = {a: a, b: b, c: c, d: d};
+
+                  for (var entry in o) {
+                    $("#" + entry).value = Math.round10(o[entry], -PRECISION);
+                  }
+                  applyMatrix();
+                });
+              });
+
+              // MathJax input plugin doesn't let us supply many attrs
+              $("#a").setAttribute("tabindex", 1);
+              $("#b").setAttribute("tabindex", 2);
+              $("#c").setAttribute("tabindex", 3);
+              $("#d").setAttribute("tabindex", 4);
+
+              var _iteratorNormalCompletion = true;
+              var _didIteratorError = false;
+              var _iteratorError = undefined;
+
               try {
-                if (!_iteratorNormalCompletion && _iterator.return) {
-                  _iterator.return();
-                }
+                for (
+                  var _iterator = $$(".matrix-entry")[Symbol.iterator](), _step;
+                  !(_iteratorNormalCompletion = (_step = _iterator.next())
+                    .done);
+                  _iteratorNormalCompletion = true
+                ) {
+                  var input = _step.value;
+
+                  input.setAttribute("pattern", "^-?[.\\d]+$");
+                } // disallow non-numeric inputs
+
+                /* application function */
+              } catch (err) {
+                _didIteratorError = true;
+                _iteratorError = err;
               } finally {
-                if (_didIteratorError) {
-                  throw _iteratorError;
+                try {
+                  if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                  }
+                } finally {
+                  if (_didIteratorError) {
+                    throw _iteratorError;
+                  }
                 }
               }
-            }
 
-            function applyMatrix() {
-              var o = {};
-              var _arr = ["a", "b", "c", "d"];
-              for (var _i = 0; _i < _arr.length; _i++) {
-                var entry = _arr[_i];
-                o[entry] = Number($("#" + entry).value) || 0;
-              }
-              var a = o.a;
-              var b = o.b;
-              var c = o.c;
-              var d = o.d;
-
-              api.updateMatrix({a: a, b: b, c: c, d: d});
-
-              api.computeValues(a, b, c, d).then(function (_ref) {
-                var determinant = _ref.determinant;
-                var eigenvalues = _ref.eigenvalues;
-
-                // get mathjax elements
-                var detJax = MathJax.Hub.getAllJax("determinant")[0],
-                  evJax1 = MathJax.Hub.getAllJax("eigenvalue-1")[0],
-                  evJax2 = MathJax.Hub.getAllJax("eigenvalue-2")[0];
-
-                // put in
-                detJax.Text(Math.round10(determinant, -PRECISION));
-
-                var _eigenvalues = _slicedToArray(eigenvalues, 3);
-
-                var evType = _eigenvalues[0];
-                var ev1 = _eigenvalues[1];
-                var ev2 = _eigenvalues[2];
-
-                ev1 = Math.round10(ev1, -PRECISION);
-                ev2 = Math.round10(ev2, -PRECISION);
-
-                if (evType === "real") {
-                  evJax1.Text(eColor1 + ev1);
-                  evJax2.Text(eColor2 + ev2);
-                } else if (evType === "complex") {
-                  var Re = ev1,
-                    Im = ev2;
-                  evJax1.Text(Re + " + " + Im + "i");
-                  evJax2.Text(Re + " - " + Im + "i");
+              function applyMatrix() {
+                var o = {};
+                var _arr = ["a", "b", "c", "d"];
+                for (var _i = 0; _i < _arr.length; _i++) {
+                  var entry = _arr[_i];
+                  o[entry] = Number($("#" + entry).value) || 0;
                 }
-              });
-            }
+                var a = o.a;
+                var b = o.b;
+                var c = o.c;
+                var d = o.d;
 
-            /* premade matrix calculators */
-            var examples = {
-              rotation: function rotation(theta) {
-                theta *= Math.PI / 180; // convert from degrees
-                return [
-                  Math.cos(theta),
-                  -Math.sin(theta),
-                  Math.sin(theta),
-                  Math.cos(theta),
-                ];
-              },
-              reflection: function reflection(theta) {
-                theta *= Math.PI / 180; // convert from degrees
-                return [
-                  Math.cos(2 * theta),
-                  Math.sin(2 * theta),
-                  Math.sin(2 * theta),
-                  -Math.cos(2 * theta),
-                ];
-              },
-              shearX: function shearX(k) {
-                return [1, k, 0, 1];
-              },
-              shearY: function shearY(k) {
-                return [1, 0, k, 1];
-              },
-              scale: function scale(c) {
-                return [c, 0, 0, c];
-              },
-            };
+                api.updateMatrix({a: a, b: b, c: c, d: d});
 
-            // initial run
-            applyMatrix();
-          });
+                api.computeValues(a, b, c, d).then(function (_ref) {
+                  var determinant = _ref.determinant;
+                  var eigenvalues = _ref.eigenvalues;
+
+                  // get mathjax elements
+                  var detJax = MathJax.Hub.getAllJax("determinant")[0],
+                    evJax1 = MathJax.Hub.getAllJax("eigenvalue-1")[0],
+                    evJax2 = MathJax.Hub.getAllJax("eigenvalue-2")[0];
+
+                  // put in
+                  detJax.Text(Math.round10(determinant, -PRECISION));
+
+                  var _eigenvalues = _slicedToArray(eigenvalues, 3);
+
+                  var evType = _eigenvalues[0];
+                  var ev1 = _eigenvalues[1];
+                  var ev2 = _eigenvalues[2];
+
+                  ev1 = Math.round10(ev1, -PRECISION);
+                  ev2 = Math.round10(ev2, -PRECISION);
+
+                  if (evType === "real") {
+                    evJax1.Text(eColor1 + ev1);
+                    evJax2.Text(eColor2 + ev2);
+                  } else if (evType === "complex") {
+                    var Re = ev1,
+                      Im = ev2;
+                    evJax1.Text(Re + " + " + Im + "i");
+                    evJax2.Text(Re + " - " + Im + "i");
+                  }
+                });
+              }
+
+              /* premade matrix calculators */
+              var examples = {
+                rotation: function rotation(theta) {
+                  theta *= Math.PI / 180; // convert from degrees
+                  return [
+                    Math.cos(theta),
+                    -Math.sin(theta),
+                    Math.sin(theta),
+                    Math.cos(theta),
+                  ];
+                },
+                reflection: function reflection(theta) {
+                  theta *= Math.PI / 180; // convert from degrees
+                  return [
+                    Math.cos(2 * theta),
+                    Math.sin(2 * theta),
+                    Math.sin(2 * theta),
+                    -Math.cos(2 * theta),
+                  ];
+                },
+                shearX: function shearX(k) {
+                  return [1, k, 0, 1];
+                },
+                shearY: function shearY(k) {
+                  return [1, 0, k, 1];
+                },
+                scale: function scale(c) {
+                  return [c, 0, 0, c];
+                },
+              };
+
+              // initial run
+              applyMatrix();
+            },
+          );
         });
       });
     </script>
