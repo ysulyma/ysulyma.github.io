@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Volumes of revolution</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <link href="./style.css" rel="stylesheet"/>
+    <link href="./mathquill.css" rel="stylesheet"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </head>
+  <body>
+    <div id="three-container"></div>
+    <div id="two-container"></div>
+    <div id="controls">
+      <div id="controls-left">
+        <table>
+          <tbody>
+            <tr>
+              <th>
+                \(f(x) =\)
+              </th>
+              <td>
+                <span id="function-input">cos(x)+sin(x)+2</span>
+              </td>
+            </tr>
+            <tr>
+              <th>\(a\)</th>
+              <td>
+                <input id="input-a" tabindex="2" type="number" value="-2"/>
+              </td>
+            </tr>
+            <tr>
+              <th>\(b\)</th>
+              <td>
+                <input id="input-b" tabindex="3" type="number" value="2"/>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="controls-right">
+        <table>
+          <tbody>
+            <tr>
+              <th>
+                Show
+              </th>
+              <td>
+                <span id="graph-text">Graph</span>
+                <svg id="toggle-graph" height="25" viewBox="0 0 80 50">
+                  <rect fill="#00AEFF" x="2" y="11" height="28" width="76" rx="12" ry="12"/>
+                  <circle cx="20" cy="25" r="20" fill="#EEE"/>
+                </svg>
+                <span id="disks-text">Disks</span>
+              </td>
+            </tr>
+            <tr>
+              <th># of disks</th>
+              <td><input id="slices" min="1" tabindex="5" type="number" value="10"/></td>
+            </tr>
+            <tr>
+              <th>Volume (approx)</th>
+              <td rowspan="2">\({}\)</td>
+            </tr>
+            <tr>
+              <th>Volume (exact<small>ish</small>)</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/87/three.min.js"></script>
+    <script src="./OrbitControls.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.15.0/math.min.js"></script>
+
+    <script src="./interface.js"></script>
+    <script src="./api-three.js"></script>
+    <script src="./api-two.js"></script>
+  </body>
+</html>
