@@ -1,0 +1,75 @@
+body {
+  background-color: #222;
+}
+
+#three-container {
+  width: 100vw;
+  height: 50vh;
+}
+
+.face-label {
+  font-size: .5em;
+}
+
+form {
+  color: #FFF;
+  font-family: "Alegreya", sans-serif;
+  font-size: 1.2em;
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+form > * {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.MathJax * {
+  color: #FFF;
+}
+
+#diagram {
+  margin: 0 2em;
+}
+
+#controls {
+  border-collapse: collapse;
+  padding: .25em 0;
+}
+
+#controls caption {
+  background-color: #138684;
+  border-radius: 4px 4px 0 0;
+  font-weight: bold;
+}
+
+#controls tr:nth-child(odd) {
+  background-color: #333;
+}
+
+#controls tr:nth-child(even) {
+  background-color: #444;
+}
+
+#controls tr:last-child > *:first-child {
+  border-bottom-left-radius: 4px;
+}
+
+#controls tr:last-child > *:last-child {
+  border-bottom-right-radius: 4px;
+}
+
+#controls th {
+  padding: .25em .5em;
+  text-align: right;
+}
+
+#controls td {
+  padding: .25em .5em;
+  text-align: left;
+}
+
+#controls kbd {
+  color: #FF0;
+}
