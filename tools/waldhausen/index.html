@@ -1,0 +1,48 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Yuri J. F. Sulyma</title>
+
+    <script src="/js/module.js"></script>
+    <script src="/js/utils.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML,/js/mathjax/config.js"></script>
+    <style>
+      #Sdot {
+        float: left;
+      }
+
+      #circle {
+        margin-left: 10em;
+        margin-bottom: 1em;
+      }
+
+      #decomposition {
+        margin-left: 1em;
+      }
+
+      .semantics {
+        cursor: pointer;
+      }
+
+      .highlight {
+        color: #00aeff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Sdot"></div>
+    <svg id="circle" height="100" width="100">
+      <g transform="translate(50,50)">
+        <circle cx="0" cy="0" r="50" />
+        <circle cx="0" cy="0" r="40" />
+        <circle cx="0" cy="0" r="30" />
+        <circle cx="0" cy="0" r="20" />
+        <circle cx="0" cy="0" r="10" />
+      </g>
+    </svg>
+    <div id="decomposition">\(\)</div>
+    <script src="./waldhausen.js"></script>
+  </body>
+</html>
