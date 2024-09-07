@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Gauss-Jordan Elimination (Row Reduction)</title>
+
+    <link
+      rel="stylesheet"
+      href="//fonts.googleapis.com/css?family=Alegreya+Sans:400,400italic,700italic,700|Alegreya:400,400italic,700,700italic|Alegreya+SC:400,400italic,700,700italic|Alegreya+Sans+SC:400,400italic,700,700italic"
+      type="text/css"
+      media="all"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="/js/es6.js"></script>
+    <script src="/js/es7.js"></script>
+    <script src="/js/module.js"></script>
+
+    <script src="/js/utils.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML,/js/mathjax/config.js"></script>
+  </head>
+
+  <body>
+    <div style="display: none">
+      \[ \newcommand{\highlight}{\color[rgb]{0.29,0.44,1}}
+      \newcommand{\pivot}{\color[rgb]{1, 0.43, 0}} \]
+    </div>
+    <div id="input">
+      <p>
+        <label for="rows">Rows:</label>
+        <input
+          class="dims"
+          id="rows"
+          min="0"
+          tabindex="1"
+          type="number"
+          value="3"
+        />
+      </p>
+
+      <p>
+        <label for="cols">Columns:</label>
+        <input
+          class="dims"
+          id="cols"
+          min="0"
+          tabindex="2"
+          type="number"
+          value="3"
+        />
+      </p>
+
+      <div id="matrix">\(\)</div>
+
+      <p>
+        <input type="submit" value="Reduce!" />
+      </p>
+
+      <div id="legend">
+        <span id="legend-title">Legend</span>
+        <span style="color: #ff7000">Current pivot entry being worked on</span>
+        <span style="color: #4a71ff">Row(s) being transformed on </span>
+      </div>
+    </div>
+
+    <div id="output"></div>
+
+    <!-- scripts -->
+    <script>
+      MathJax.Hub.Queue(function () {
+        Module.provide("mathjax", MathJax);
+      });
+    </script>
+    <script src="./rational.js"></script>
+    <script src="./finite-field.js"></script>
+    <script src="./elimination.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
