@@ -266,14 +266,14 @@
                 });
               });
 
-              $("input#image").addEventListener("keydown", function (e) {
-                if (e.keyCode !== ENTER) return true;
-                if (e.target.matches(":invalid")) return true;
-
-                var url = e.target.value;
-                if (url === "") return;
-                api.updateImage("/cors.php?url=" + url);
-              });
+              // $("input#image").addEventListener("keydown", function (e) {
+              //   if (e.keyCode !== ENTER) return true;
+              //   if (e.target.matches(":invalid")) return true;
+              //
+              //   var url = e.target.value;
+              //   if (url === "") return;
+              //   api.updateImage("/cors.php?url=" + url);
+              // });
 
               $$("input.example").forEach(function (input) {
                 input.addEventListener("keydown", function (e) {
