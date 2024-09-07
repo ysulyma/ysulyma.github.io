@@ -1,0 +1,421 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Matrix visualizer</title>
+
+    <link
+      rel="stylesheet"
+      href="//fonts.googleapis.com/css?family=Alegreya+Sans:400,400italic,700italic,700|Alegreya:400,400italic,700,700italic|Alegreya+SC:400,400italic,700,700italic|Alegreya+Sans+SC:400,400italic,700,700italic"
+      type="text/css"
+      media="all"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: #333;
+        font-family: "Alegreya Sans", sans-serif;
+      }
+
+      main {
+        background: #fff;
+        border: 1px solid #000;
+        border-style: none solid;
+        margin: 0 auto;
+        padding: 1em;
+        width: 70%;
+      }
+
+      iframe {
+        border: 0 none transparent;
+        display: block;
+        margin: 0 auto;
+      }
+
+      p {
+        margin: 0.5em 0;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      th {
+        background: #ae80ff;
+        color: #fff;
+      }
+
+      td {
+        padding: 4px;
+      }
+
+      /* error message for non-ES6 browsers */
+      .error {
+        color: #f00;
+        font-weight: bold;
+      }
+    </style>
+
+    <script src="/js/es6.js"></script>
+    <script src="/js/es7.js"></script>
+    <script src="/js/module.js"></script>
+    <script async src="/js/ractive-master.js"></script>
+    <script src="/js/utils.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML,/js/mathjax/config.js"></script>
+  </head>
+  <body>
+    <main>
+      <iframe src="./ractive/" height="400" width="800"></iframe>
+
+      <p>
+        Play around with different values in the matrix to see how the linear
+        transformation it represents affects the image. Notice how the sign of
+        the determinant (positive or negative) reflects the
+        <em>orientation</em> of the image (whether it appears "mirrored" or
+        not). The arrows denote eigenvectors corresponding to eigenvalues of the
+        same color.
+      </p>
+
+      \[ \begin{bmatrix} \FormInput[2][matrix-entry][1]{a} &
+      \FormInput[2][matrix-entry][0]{b}\\ \FormInput[2][matrix-entry][0]{c} &
+      \FormInput[2][matrix-entry][1]{d} \end{bmatrix} \]
+
+      <div id="values">
+        <p>Determinant: <span id="determinant">\(\)</span></p>
+
+        <p>
+          Eigenvalues: <span id="eigenvalue-1">\(\)</span>,
+          <span id="eigenvalue-2">\(\)</span>.
+        </p>
+      </div>
+
+      <p>
+        Change image:
+        <input id="image" placeholder="Enter a URL" size="80" type="url" />
+      </p>
+
+      <p>Here are some examples of matrix transformations.</p>
+
+      <table>
+        <tr>
+          <th>Transformation</th>
+          <th>Matrix</th>
+          <th>Try it</th>
+        </tr>
+        <tr>
+          <td>Rotation by angle \(\theta\)</td>
+          <td>
+            \(\begin{bmatrix}\cos\theta & -\sin\theta\\\sin\theta &
+            \cos\theta\end{bmatrix}\)
+          </td>
+          <td>
+            \(\theta\):
+            <input
+              class="example"
+              data-type="rotation"
+              placeholder="Enter an angle (in degrees)"
+              size="22"
+              type="text"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Reflection about line at angle \(\theta\)</td>
+          <td>
+            \(\begin{bmatrix}\cos2\theta & \sin2\theta\\\sin2\theta &
+            -\cos2\theta\end{bmatrix}\)
+          </td>
+          <td>
+            \(\theta\):
+            <input
+              class="example"
+              data-type="reflection"
+              placeholder="Enter an angle (in degrees)"
+              size="22"
+              type="text"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Shear parallel to \(x\)-axis</td>
+          <td>\(\begin{bmatrix}1 & k\\0 & 1\end{bmatrix}\)</td>
+          <td>
+            \(k\):
+            <input
+              class="example"
+              data-type="shearX"
+              placeholder="Enter a shear factor"
+              size="22"
+              type="text"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Shear parallel to \(y\)-axis</td>
+          <td>\(\begin{bmatrix}1 & 0\\k & 1\end{bmatrix}\)</td>
+          <td>
+            \(k\):
+            <input
+              class="example"
+              data-type="shearY"
+              placeholder="Enter a shear factor"
+              size="22"
+              type="text"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Uniform scaling by factor \(c\)</td>
+          <td>\(\begin{bmatrix}c & 0\\0 & c\end{bmatrix}\)</td>
+          <td>
+            \(c\):
+            <input
+              class="example"
+              data-type="scale"
+              placeholder="Enter a scale factor"
+              size="22"
+              type="text"
+            />
+          </td>
+        </tr>
+      </table>
+    </main>
+
+    <script>
+      "use strict";
+
+      // oh dear.
+
+      var _slicedToArray = (function () {
+        function sliceIterator(arr, i) {
+          var _arr = [];
+          var _n = true;
+          var _d = false;
+          var _e = undefined;
+          try {
+            for (
+              var _i = arr[Symbol.iterator](), _s;
+              !(_n = (_s = _i.next()).done);
+              _n = true
+            ) {
+              _arr.push(_s.value);
+              if (i && _arr.length === i) break;
+            }
+          } catch (err) {
+            _d = true;
+            _e = err;
+          } finally {
+            try {
+              if (!_n && _i["return"]) _i["return"]();
+            } finally {
+              if (_d) throw _e;
+            }
+          }
+          return _arr;
+        }
+        return function (arr, i) {
+          if (Array.isArray(arr)) {
+            return arr;
+          } else if (Symbol.iterator in Object(arr)) {
+            return sliceIterator(arr, i);
+          } else {
+            throw new TypeError(
+              "Invalid attempt to destructure non-iterable instance",
+            );
+          }
+        };
+      })();
+
+      MathJax.Hub.Queue(function () {
+        Module.import("ractive").then(function (Ractive) {
+          Ractive(document.querySelector("iframe")).then(function (api) {
+            var PRECISION = 4; // for rounding
+            var ENTER = 13;
+
+            // eigenvector color coding
+            var eColor1 = "\\color[rgb]{1, 0, 0}",
+              eColor2 = "\\color[rgb]{0, 0.35, 1}";
+
+            var _Utils = Utils;
+            var _Utils$selectors = _Utils.selectors;
+            var $ = _Utils$selectors.$;
+            var $$ = _Utils$selectors.$$;
+
+            /* set up behaviours */
+
+            $$("input.matrix-entry").forEach(function (input) {
+              input.addEventListener("keydown", function (e) {
+                if (e.keyCode !== ENTER) return;
+                applyMatrix();
+              });
+            });
+
+            $("input#image").addEventListener("keydown", function (e) {
+              if (e.keyCode !== ENTER) return true;
+              if (e.target.matches(":invalid")) return true;
+
+              var url = e.target.value;
+              if (url === "") return;
+              api.updateImage("/cors.php?url=" + url);
+            });
+
+            $$("input.example").forEach(function (input) {
+              input.addEventListener("keydown", function (e) {
+                if (e.keyCode !== ENTER) return;
+
+                var _examples$e$target$da = examples[e.target.dataset.type](
+                  e.target.value,
+                );
+
+                var _examples$e$target$da2 = _slicedToArray(
+                  _examples$e$target$da,
+                  4,
+                );
+
+                var a = _examples$e$target$da2[0];
+                var b = _examples$e$target$da2[1];
+                var c = _examples$e$target$da2[2];
+                var d = _examples$e$target$da2[3];
+
+                var o = {a: a, b: b, c: c, d: d};
+
+                for (var entry in o) {
+                  $("#" + entry).value = Math.round10(o[entry], -PRECISION);
+                }
+                applyMatrix();
+              });
+            });
+
+            // MathJax input plugin doesn't let us supply many attrs
+            $("#a").setAttribute("tabindex", 1);
+            $("#b").setAttribute("tabindex", 2);
+            $("#c").setAttribute("tabindex", 3);
+            $("#d").setAttribute("tabindex", 4);
+
+            var _iteratorNormalCompletion = true;
+            var _didIteratorError = false;
+            var _iteratorError = undefined;
+
+            try {
+              for (
+                var _iterator = $$(".matrix-entry")[Symbol.iterator](), _step;
+                !(_iteratorNormalCompletion = (_step = _iterator.next()).done);
+                _iteratorNormalCompletion = true
+              ) {
+                var input = _step.value;
+
+                input.setAttribute("pattern", "^-?[.\\d]+$");
+              } // disallow non-numeric inputs
+
+              /* application function */
+            } catch (err) {
+              _didIteratorError = true;
+              _iteratorError = err;
+            } finally {
+              try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                  _iterator.return();
+                }
+              } finally {
+                if (_didIteratorError) {
+                  throw _iteratorError;
+                }
+              }
+            }
+
+            function applyMatrix() {
+              var o = {};
+              var _arr = ["a", "b", "c", "d"];
+              for (var _i = 0; _i < _arr.length; _i++) {
+                var entry = _arr[_i];
+                o[entry] = Number($("#" + entry).value) || 0;
+              }
+              var a = o.a;
+              var b = o.b;
+              var c = o.c;
+              var d = o.d;
+
+              api.updateMatrix({a: a, b: b, c: c, d: d});
+
+              api.computeValues(a, b, c, d).then(function (_ref) {
+                var determinant = _ref.determinant;
+                var eigenvalues = _ref.eigenvalues;
+
+                // get mathjax elements
+                var detJax = MathJax.Hub.getAllJax("determinant")[0],
+                  evJax1 = MathJax.Hub.getAllJax("eigenvalue-1")[0],
+                  evJax2 = MathJax.Hub.getAllJax("eigenvalue-2")[0];
+
+                // put in
+                detJax.Text(Math.round10(determinant, -PRECISION));
+
+                var _eigenvalues = _slicedToArray(eigenvalues, 3);
+
+                var evType = _eigenvalues[0];
+                var ev1 = _eigenvalues[1];
+                var ev2 = _eigenvalues[2];
+
+                ev1 = Math.round10(ev1, -PRECISION);
+                ev2 = Math.round10(ev2, -PRECISION);
+
+                if (evType === "real") {
+                  evJax1.Text(eColor1 + ev1);
+                  evJax2.Text(eColor2 + ev2);
+                } else if (evType === "complex") {
+                  var Re = ev1,
+                    Im = ev2;
+                  evJax1.Text(Re + " + " + Im + "i");
+                  evJax2.Text(Re + " - " + Im + "i");
+                }
+              });
+            }
+
+            /* premade matrix calculators */
+            var examples = {
+              rotation: function rotation(theta) {
+                theta *= Math.PI / 180; // convert from degrees
+                return [
+                  Math.cos(theta),
+                  -Math.sin(theta),
+                  Math.sin(theta),
+                  Math.cos(theta),
+                ];
+              },
+              reflection: function reflection(theta) {
+                theta *= Math.PI / 180; // convert from degrees
+                return [
+                  Math.cos(2 * theta),
+                  Math.sin(2 * theta),
+                  Math.sin(2 * theta),
+                  -Math.cos(2 * theta),
+                ];
+              },
+              shearX: function shearX(k) {
+                return [1, k, 0, 1];
+              },
+              shearY: function shearY(k) {
+                return [1, 0, k, 1];
+              },
+              scale: function scale(c) {
+                return [c, 0, 0, c];
+              },
+            };
+
+            // initial run
+            applyMatrix();
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
