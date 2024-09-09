@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+#visual {
+  background-color: #D2E0EC;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  height: 400px;
+  width: 800px;
+}
+
+main {
+  background: #FFF;
+  box-sizing: border-box;
+  padding: 1em;
+}
+
+p {
+  margin: .5em 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  background: #1a69b5;
+  color: #FFF;
+  padding: 4px;
+}
+
+td {
+  padding: 4px .5em;
+}
+
+input.example {
+  border: none;
+  font-size: .9em;
+  margin-left: .3em;
+  padding: 1px 4px;
+}
+
+.matrix-entry {
+  font-size: 1.5rem;
+}
+
+/* error message for non-ES6 browsers */
+.error {
+  color: #F00;
+  font-weight: bold;
+}
+
+table {
+  background-color: #D2E0EC;
+  border-radius: 3px;
+}
+
+thead > tr:first-child > *:first-child {
+  border-top-left-radius: 3px;  
+}
+
+thead > tr:first-child > *:last-child {
+  border-top-right-radius: 3px;
+}
+
+tbody > tr:last-child > *:first-child {
+  border-bottom-left-radius: 3px;
+}
+
+tbody > tr:last-child > *:last-child {
+  border-bottom-right-radius: 3px;
+}

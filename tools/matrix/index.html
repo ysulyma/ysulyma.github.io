@@ -17,6 +17,11 @@
         padding: 0;
       }
 
+      :link,
+      :visited {
+        color: inherit;
+      }
+
       body {
         background: #333;
         font-family: "Alegreya Sans", sans-serif;
@@ -59,6 +64,54 @@
         color: #f00;
         font-weight: bold;
       }
+
+      nav {
+        background-color: #444;
+        color: #fff;
+        margin: 0 auto;
+        padding: 0.5em 0;
+        width: 100%;
+        width: 70%;
+      }
+
+      nav > ul {
+        background-color: #666;
+        border-radius: 4px;
+        display: flex;
+        list-style: none;
+        margin: 0 auto;
+        width: min-content;
+      }
+
+      .tab-trigger {
+        padding: 0.2em 0.4em;
+      }
+
+      .tab-trigger > :link {
+        color: inherit;
+        text-decoration: none;
+        padding: 0.4em 0.8em;
+      }
+
+      .tab-trigger[aria-selected="true"] {
+        background-color: #1a69b5;
+      }
+
+      .tab-trigger:first-child {
+        border-radius: 4px 0 0 4px;
+      }
+
+      .tab-trigger:last-child {
+        border-radius: 0 4px 4px 0;
+      }
+
+      .tab {
+        visibiliity: hidden;
+      }
+
+      .tab[data-state="active"] {
+        visibility: visible;
+      }
     </style>
 
     <script src="/js/es6.js"></script>
@@ -70,130 +123,165 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML,/js/mathjax/config.js"></script>
   </head>
   <body>
+    <nav>
+      <ul>
+        <li
+          class="tab-trigger"
+          id="tab-trigger-2d"
+          aria-controls="tab-2d"
+          role="tab"
+        >
+          <a href="#tab-2d">2d</a>
+        </li>
+        <li
+          class="tab-trigger"
+          id="tab-trigger-3d"
+          aria-controls="tab-3d"
+          role="tab"
+        >
+          <a href="#tab-3d">3d</a>
+        </li>
+      </ul>
+    </nav>
     <main>
-      <iframe
-        id="ractive-iframe"
-        src="./ractive/"
-        height="400"
-        width="800"
-      ></iframe>
-
-      <p>
-        Play around with different values in the matrix to see how the linear
-        transformation it represents affects the image. Notice how the sign of
-        the determinant (positive or negative) reflects the
-        <em>orientation</em> of the image (whether it appears "mirrored" or
-        not). The arrows denote eigenvectors corresponding to eigenvalues of the
-        same color.
-      </p>
-
-      \[ \begin{bmatrix} \FormInput[2][matrix-entry][1]{a} &
-      \FormInput[2][matrix-entry][0]{b}\\ \FormInput[2][matrix-entry][0]{c} &
-      \FormInput[2][matrix-entry][1]{d} \end{bmatrix} \]
-
-      <div id="values">
-        <p>Determinant: <span id="determinant">\(\)</span></p>
+      <div
+        aria-controlledby="tab-trigger-2d"
+        class="tab"
+        id="tab-2d"
+        role="tabpanel"
+      >
+        <iframe
+          id="ractive-iframe"
+          src="./ractive/"
+          height="400"
+          width="800"
+        ></iframe>
 
         <p>
-          Eigenvalues: <span id="eigenvalue-1">\(\)</span>,
-          <span id="eigenvalue-2">\(\)</span>.
+          Play around with different values in the matrix to see how the linear
+          transformation it represents affects the image. Notice how the sign of
+          the determinant (positive or negative) reflects the
+          <em>orientation</em> of the image (whether it appears "mirrored" or
+          not). The arrows denote eigenvectors corresponding to eigenvalues of
+          the same color.
         </p>
+
+        \[ \begin{bmatrix} \FormInput[2][matrix-entry][1]{a} &
+        \FormInput[2][matrix-entry][0]{b}\\ \FormInput[2][matrix-entry][0]{c} &
+        \FormInput[2][matrix-entry][1]{d} \end{bmatrix} \]
+
+        <div id="values">
+          <p>Determinant: <span id="determinant">\(\)</span></p>
+
+          <p>
+            Eigenvalues: <span id="eigenvalue-1">\(\)</span>,
+            <span id="eigenvalue-2">\(\)</span>.
+          </p>
+        </div>
+
+        <!-- <p> -->
+        <!--   Change image: -->
+        <!--   <input id="image" placeholder="Enter a URL" size="80" type="url" /> -->
+        <!-- </p> -->
+
+        <p>Here are some examples of matrix transformations.</p>
+
+        <table>
+          <tr>
+            <th>Transformation</th>
+            <th>Matrix</th>
+            <th>Try it</th>
+          </tr>
+          <tr>
+            <td>Rotation by angle \(\theta\)</td>
+            <td>
+              \(\begin{bmatrix}\cos\theta & -\sin\theta\\\sin\theta &
+              \cos\theta\end{bmatrix}\)
+            </td>
+            <td>
+              \(\theta\):
+              <input
+                class="example"
+                data-type="rotation"
+                placeholder="Enter an angle (in degrees)"
+                size="22"
+                type="text"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Reflection about line at angle \(\theta\)</td>
+            <td>
+              \(\begin{bmatrix}\cos2\theta & \sin2\theta\\\sin2\theta &
+              -\cos2\theta\end{bmatrix}\)
+            </td>
+            <td>
+              \(\theta\):
+              <input
+                class="example"
+                data-type="reflection"
+                placeholder="Enter an angle (in degrees)"
+                size="22"
+                type="text"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Shear parallel to \(x\)-axis</td>
+            <td>\(\begin{bmatrix}1 & k\\0 & 1\end{bmatrix}\)</td>
+            <td>
+              \(k\):
+              <input
+                class="example"
+                data-type="shearX"
+                placeholder="Enter a shear factor"
+                size="22"
+                type="text"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Shear parallel to \(y\)-axis</td>
+            <td>\(\begin{bmatrix}1 & 0\\k & 1\end{bmatrix}\)</td>
+            <td>
+              \(k\):
+              <input
+                class="example"
+                data-type="shearY"
+                placeholder="Enter a shear factor"
+                size="22"
+                type="text"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Uniform scaling by factor \(c\)</td>
+            <td>\(\begin{bmatrix}c & 0\\0 & c\end{bmatrix}\)</td>
+            <td>
+              \(c\):
+              <input
+                class="example"
+                data-type="scale"
+                placeholder="Enter a scale factor"
+                size="22"
+                type="text"
+              />
+            </td>
+          </tr>
+        </table>
       </div>
-
-      <!-- <p> -->
-      <!--   Change image: -->
-      <!--   <input id="image" placeholder="Enter a URL" size="80" type="url" /> -->
-      <!-- </p> -->
-
-      <p>Here are some examples of matrix transformations.</p>
-
-      <table>
-        <tr>
-          <th>Transformation</th>
-          <th>Matrix</th>
-          <th>Try it</th>
-        </tr>
-        <tr>
-          <td>Rotation by angle \(\theta\)</td>
-          <td>
-            \(\begin{bmatrix}\cos\theta & -\sin\theta\\\sin\theta &
-            \cos\theta\end{bmatrix}\)
-          </td>
-          <td>
-            \(\theta\):
-            <input
-              class="example"
-              data-type="rotation"
-              placeholder="Enter an angle (in degrees)"
-              size="22"
-              type="text"
-            />
-          </td>
-        </tr>
-
-        <tr>
-          <td>Reflection about line at angle \(\theta\)</td>
-          <td>
-            \(\begin{bmatrix}\cos2\theta & \sin2\theta\\\sin2\theta &
-            -\cos2\theta\end{bmatrix}\)
-          </td>
-          <td>
-            \(\theta\):
-            <input
-              class="example"
-              data-type="reflection"
-              placeholder="Enter an angle (in degrees)"
-              size="22"
-              type="text"
-            />
-          </td>
-        </tr>
-
-        <tr>
-          <td>Shear parallel to \(x\)-axis</td>
-          <td>\(\begin{bmatrix}1 & k\\0 & 1\end{bmatrix}\)</td>
-          <td>
-            \(k\):
-            <input
-              class="example"
-              data-type="shearX"
-              placeholder="Enter a shear factor"
-              size="22"
-              type="text"
-            />
-          </td>
-        </tr>
-
-        <tr>
-          <td>Shear parallel to \(y\)-axis</td>
-          <td>\(\begin{bmatrix}1 & 0\\k & 1\end{bmatrix}\)</td>
-          <td>
-            \(k\):
-            <input
-              class="example"
-              data-type="shearY"
-              placeholder="Enter a shear factor"
-              size="22"
-              type="text"
-            />
-          </td>
-        </tr>
-
-        <tr>
-          <td>Uniform scaling by factor \(c\)</td>
-          <td>\(\begin{bmatrix}c & 0\\0 & c\end{bmatrix}\)</td>
-          <td>
-            \(c\):
-            <input
-              class="example"
-              data-type="scale"
-              placeholder="Enter a scale factor"
-              size="22"
-              type="text"
-            />
-          </td>
-        </tr>
-      </table>
+      <div
+        aria-controlledby="tab-trigger-3d"
+        class="tab"
+        id="tab-3d"
+        role="tabpanel"
+      >
+        <iframe src="./3d/" height="800" width="100%"></iframe>
+      </div>
     </main>
 
     <script>
@@ -424,6 +512,46 @@
           );
         });
       });
+
+      (() => {
+        const $ = (selector) => document.querySelector(selector);
+        const $$ = (selector) =>
+          Array.from(document.querySelectorAll(selector));
+
+        function setTab(id) {
+          // get controlled tab
+          const tab = $(`#${id}`);
+          console.log(id, tab);
+
+          // set selected
+          for (const tabTrigger of $$(".tab-trigger")) {
+            const matches = tabTrigger.getAttribute("aria-controls") === tab.id;
+            tabTrigger.setAttribute(
+              "aria-selected",
+              matches ? "true" : "false",
+            );
+          }
+
+          // set visible
+          for (const tabContent of $$(".tab")) {
+            tabContent.style.display =
+              tabContent.id === tab.id ? "block" : "none";
+          }
+        }
+
+        for (const trigger of $$(".tab-trigger")) {
+          trigger.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            const tabId = e.currentTarget.getAttribute("aria-controls");
+            console.log(e.target, tabId);
+
+            setTab(tabId);
+          });
+        }
+
+        setTab("tab-2d");
+      })();
     </script>
   </body>
 </html>

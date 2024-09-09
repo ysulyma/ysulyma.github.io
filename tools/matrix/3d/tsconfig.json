@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "alwaysStrict": true,
+    "jsx": "react-jsx",
+    "lib": ["es2015", "es2016", "es2017", "dom"],
+    "moduleResolution": "node",
+    "pretty": true,
+    "removeComments": true,
+    "target": "es6",
+
+    "baseUrl": ".",
+    "paths": {
+      "@lib/*": ["/home/yuri/webu-content/shared/lib/*"],
+      "@libenv/*": ["/home/yuri/webu-content/shared/@development", "/home/yuri/webu-content/shared/@production"],
+      "@libr/*": ["/home/yuri/webu-content/shared/libr/*"],
+      "@loaders/*": ["/home/yuri/webu-content/shared/loaders/*"]
+    }
+  },
+  "files": ["./src/3d.tsx"]
+}
