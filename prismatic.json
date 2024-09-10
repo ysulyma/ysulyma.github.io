@@ -16,7 +16,7 @@
   "Antieau",
   {
     "authors": ["Antieau", "Bhatt", "Mathew"],
-    "tags": [],
+    "tags": ["hodge-de-rham"],
     "title": "Counterexamples to HKR in characteristic $p$",
     "href": "https://arxiv.org/abs/1909.11437"
   },
@@ -380,7 +380,7 @@
   },
   {
     "authors": ["Riggenbach"],
-    "tags": ["calculation", "k"],
+    "tags": ["calculation", "cartier-smooth", "k"],
     "title": "$K$-Theory of Truncated Polynomials",
     "href": "https://arxiv.org/abs/2211.11110"
   },
@@ -550,7 +550,7 @@
   "Mao",
   {
     "authors": ["Mao"],
-    "tags": [],
+    "tags": ["dr"],
     "title": "Revisiting derived crystalline cohomology",
     "href": "https://arxiv.org/abs/2107.02921"
   },

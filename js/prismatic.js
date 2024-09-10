@@ -73,6 +73,16 @@
       color: "red",
       icon: "calculator",
     },
+    dr: {
+      alt: "de Rham cohomology",
+      color: "gray",
+      icon: "/assets/Omega.svg",
+    },
+    drw: {
+      alt: "de Rham-Witt",
+      color: "slateblue",
+      icon: "/assets/WOmega.svg",
+    },
     // even: {
     //   alt: "even filtration",
     //   color: "purple",
@@ -92,6 +102,11 @@
       alt: "genuine equivariance",
       color: "forestgreen",
       icon: "google-logo",
+    },
+    k: {
+      alt: "K-theory",
+      color: "gray",
+      icon: "/assets/K.svg",
     },
     log: {
       alt: "logarithmic stuff",
@@ -167,11 +182,17 @@
         svg = svg.replace(/<\?xml[^>]*>/, "");
 
         for (const element of $$(`img[data-icon="${key}"]`)) {
+          // if (key === "k") {
+          //   return;
+          // }
+          // if (key === "real") {
+          //   return;
+          // }
           const svgElt = $h(svg);
-          if (!svgElt) {
-            console.log(svg);
-          }
-          svgElt.setAttribute("class", "prismatic-tag-icon");
+          svgElt.setAttribute(
+            "class",
+            `prismatic-tag-icon prismatic-tag-${key}`,
+          );
 
           for (const child of $$("g, path", svgElt)) {
             child.setAttribute("fill", tagIcons[key].color);
@@ -286,7 +307,10 @@
 
                     $("path", svg).style.fill = tagIcons[tag].color;
 
-                    svg.setAttribute("class", "prismatic-tag-icon");
+                    svg.setAttribute(
+                      "class",
+                      `prismatic-tag-icon prismatic-tag-${tag}`,
+                    );
 
                     return svg;
                   }
