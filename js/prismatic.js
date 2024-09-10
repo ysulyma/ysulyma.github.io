@@ -73,11 +73,11 @@
       color: "red",
       icon: "calculator",
     },
-    // "cartier-smooth": {
-    //   alt: "Cartier smoothness",
-    //   color: "skyblue",
-    //   icon: "sailboat",
-    // },
+    "cartier-smooth": {
+      alt: "Cartier smoothness",
+      color: "#B2C248",
+      icon: "avocado-fill",
+    },
     dr: {
       alt: "de Rham cohomology",
       color: "gray",
@@ -88,11 +88,11 @@
       color: "slateblue",
       icon: "/assets/WOmega.svg",
     },
-    // even: {
-    //   alt: "even filtration",
-    //   color: "purple",
-    //   icon: "funnel-simple",
-    // },
+    even: {
+      alt: "even filtration",
+      color: "chartreuse",
+      icon: "list",
+    },
     "fargues-fontaine": {
       alt: "Fargues-Fontaine curve",
       color: "deepskyblue",
@@ -145,7 +145,7 @@
     },
     tr: {
       alt: "Cartier modules / TR",
-      color: "gray",
+      color: "orangered",
       icon: "/assets/TR.svg",
     },
   };
