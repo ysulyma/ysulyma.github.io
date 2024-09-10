@@ -6,196 +6,255 @@ permalink: /prismatic
 ---
 
 <style>
-.start::before {
-  color: green;
-  content: "► ";
-}
+  .flex {
+    display: flex;
+  }
 
-.notes::before {
-  color: blue;
-  content: "■ ";
-}
+  .inline {
+    display: inline;
+  }
 
-.major::before {
-  color: purple;
-  content: "★ ";
-}
+  .inline-flex {
+    display: inline-flex;
+  }
 
-.self::before {
-  color: red;
-  content:"! ";
-}
+  .items-center {
+    align-items: center;
+  }
+
+  #prismatic-input {
+    border-radius: 2px;
+    font-size: 18px;
+    margin: 8px auto;
+    width: 100%;
+  }
+
+  #prismatic-filters {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #prismatic-filters > div > label {
+    display: block;
+  }
+
+  #prismatic-list {
+    display: block;
+    margin: 0 auto;
+    /*translate: calc(-25 / 150 * 100%);
+    width: 150%;*/
+  }
+
+  #prismatic-list .prismatic-item {
+    font-size: 18px;
+    list-style-type: none;
+    margin: 24px 0;
+  }
+
+  .prismatic-item > .authors {
+    display: block;
+    font-size: 0.7em;
+    line-height: 1;
+  }
+
+  .prismatic-tags {
+    margin-bottom: 2px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+
+  .prismatic-tags > .tag {
+    background-color: #eee;
+    border-radius: 4px;
+    font-size: 10px;
+    margin-right: 4px;
+    padding: 1px 3px;
+  }
+
+  .prismatic-tags > .prismatic-tag-icon {
+    margin-right: 2px;
+  }
+
+  .dark-theme .prismatic-tags > .tag {
+    background-color: #333;
+  }
+
+  .prismatic-tag-icon {
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+  }
 </style>
 
-<div style="display:none">\[\newcommand{\Z}{\mathbb Z}\]</div>
+<div style="display: none">\[\newcommand{\Z}{\mathbb Z}\]</div>
 
-<p>This is a reading list for \(p\)-adic cohomology and its connections to homotopy theory, intended to help people interested in getting into the field. It is not exhaustive, and is biased towards my own interests and more recent papers.</p>
+<p>
+  This is a reading list for \(p\)-adic cohomology and its connections to
+  homotopy theory, intended to help people interested in getting into the field.
+  It is not exhaustive, and is biased towards my own interests and more recent
+  papers.
+</p>
 
-<p>Legend:</p>
-<ul>
-  <li><span style="color:green;">►</span> survey / good place to start</li>
-  <li><span style="color:blue;">■</span> course notes</li>
-  <li><span style="color:purple;">★</span> major / foundational paper</li>
-</ul>
-
-<h2>Big picture</h2>
-<ul>
-  <li class="start"><a href="https://arxiv.org/abs/1712.03708">Scholze ICM address</a></li>
-  <li class="start"><a href="https://arxiv.org/abs/2112.12010">Bhatt ICM address</a></li>
-  <li class="notes">Elmanto, <a href="https://scholar.harvard.edu/elden/classes/motives-p">Motives at $p$</a></li>
-  <li><a href="https://arxiv.org/abs/1003.3210">Kaledin ICM address</a></li>
-</ul>
-
-<h2>THH and TC</h2>
-<ul>
-  <li class="start">Hesselholt-Nikolaus, <a href="http://web.math.ku.dk/~larsh/papers/s07/handbook.pdf">Topological cyclic homology (Handbook article)</a></li>
-  <li class="notes">Krause-Nikolaus, <a href="https://www.uni-muenster.de/IVV5WS/WebHop/user/nikolaus/Papers/Lectures.pdf">Lectures on THH and cyclotomic spectra</a></li>
-  <li class="major"><a href="https://arxiv.org/abs/1707.01799">Nikolaus-Scholze</a></li>
-  <li>Krause-Nikolaus, <a href="https://arxiv.org/abs/1907.03477">Bökstedt periodicity and quotients of DVRs</a></li>
-</ul>
-
-<h2>Prismatic cohomology (THH perspective)</h2>
-<ul>
-  <li class="start">Mathew, <a href="https://arxiv.org/abs/2101.00668">Some recent advances in topological Hochschild homology</a></li>
-  <li class="notes">Morrow, <a href="https://www.math.arizona.edu/~swc/aws/2019/2019MorrowNotes.pdf">THH in arithmetic geometry (AWS 2019)</a></li>
-  <li><a href="https://publications.mfo.de/bitstream/handle/mfo/3637/OWR_2018_15.pdf?sequence=1&isAllowed=y">Arbeitsgemeinschaft notes</a></li>
-  <li class="major"><a href="https://arxiv.org/abs/1802.03261">BMS2</a></li>
-  <li class="fav">Anschütz-le Bras, <a href="https://arxiv.org/abs/1907.10530">The $p$-completed cyclotomic trace in degree 2</a></li>
-</ul>
-
-<h2>Prismatic cohomology (algebraic perspective)</h2>
-<ul>
-  <li class="start">Scholze, <a href="https://arxiv.org/abs/1606.01796">Canonical $q$-deformations in arithmetic geometry</a></li>
-  <li class="notes"><a href="http://www-personal.umich.edu/~bhattb/teaching/prismatic-columbia/">Bhatt lecture notes</a></li>
-  <li class="notes">Kedlaya, <a href="https://kskedlaya.org/prismatic/frontmatter-1.html">Notes on prismatic cohomology</a></li>
-  <li class="major">Bhatt-Scholze, <a href="https://arxiv.org/abs/1905.08229">Prisms and prismatic cohomology</a></li>
-  <li class="major">Bhatt-Lurie, <a href="https://arxiv.org/abs/2201.06120">Absolute prismatic cohomology</a></li>
-  <li>Holeman, <a href="https://arxiv.org/abs/2303.17447">Derived $\delta$-Rings and Relative Prismatic Cohomology</a></li>
-  <li>Antieau-Krause-Nikolaus, <a href="https://arxiv.org/abs/2310.12770">Prismatic cohomology relative to $\delta$-rings</a></li>
-</ul>
-
-<h2>Even filtration / THH of ring spectra</h2>
-<ul>
-  <li class="major">Hahn-Wilson, <a href="https://arxiv.org/abs/2012.00864">Redshift and multiplication for truncated Brown-Peterson spectra</a></li>
-  <li class="major">Hahn-Raksit-Wilson, <a href="https://arxiv.org/abs/2206.11208">A motivic filtration on the topological cyclic homology of commutative ring spectra</a></li>
-  <li class="major">Devalapurkar, <a href="https://sanathdevalapurkar.github.io/files/thh-Xn.pdf">Topological Hochschild homology, truncated Brown-Peterson spectra, and a topological Sen operator</a></li>
-  <li class="major">Pstrągowski, <a href="https://arxiv.org/abs/2304.04685">Perfect even modules and the even filtration</a></li>
-  <li>Devalapurkar-Hahn-Lawson-Senger-Wilson, <a href="https://arxiv.org/abs/2302.11702">Examples of disk algebras</a></li>
-  <li class="start">Devalapurkar-Misterka, <a href="https://sanathdevalapurkar.github.io/files/fgls-and-dR-complexes.pdf">Generalized $n$-series and de Rham complexes</a></li>
-  <li>Angelini-Knoll–Ausoni–Rognes, <a href="https://arxiv.org/abs/2309.11463">Algebraic K-theory of real toplogical K-theory</a></li>
-</ul>
-
-<h2>Calculations</h2>
-<ul>
-  <li>Lee, <a href="https://arxiv.org/abs/2206.02411">Integral topological Hochschild homology of connective complex K-theory</a></li>
-  <li>Liu-Wang, <a href="https://arxiv.org/abs/2012.15014">Topological Cyclic Homology of Local Fields</a></li>
-  <li>Riggenbach, <a href="https://arxiv.org/abs/2007.01227">On The Algebraic $K$-Theory of Double Points</a></li>
-  <li>Riggenbach, <a href="https://arxiv.org/abs/2203.17136">$K$-Theory of Cuspidal Curves Over a Perfectoid Base And Formal Analogues</a></li>
-  <li>Riggenbach, <a href="https://arxiv.org/abs/2211.11110">$K$-Theory of Truncated Polynomials</a></li>
-  <li>Speirs, <a href="https://arxiv.org/abs/1901.10602">On the K-theory of truncated polynomial algebras, revisited</a></li>
-  <li>Speirs, <a href="https://arxiv.org/abs/1901.08550">On the K-theory of coordinate axes in affine space</a></li>
-  <li>Sulyma, <a href="https://arxiv.org/abs/2110.04978">Floor, ceiling, slopes, and $K$-theory</a></li>
-</ul>
-
-<h2>Cartier modules / TR</h2>
-<ul>
-  <li class="major">Antieau-Nikolaus, <a href="https://arxiv.org/abs/1809.01714">Cartier modules and cyclotomic spectra</a></li>
-  <li>McCandless, <a href="https://arxiv.org/abs/2102.08281">On curves in $\mathrm K$-theory and $\mathrm{TR}$</a></li>
-  <li>Mondal, <a href="https://arxiv.org/abs/2002.05413">Dieudonné theory via cohomology of classifying stacks</a></li>
-  <li>Dotto-Krause-Nikolaus-Patchkoria, <a href="https://arxiv.org/abs/2002.01538">Witt vectors with coefficients and characteristic polynomials over non-commutative rings</a></li>
-  <li>Mathew, <a href="https://arxiv.org/abs/2005.08744">On $K(1)$-local $\mathrm{TR}$</a></li>
-  <li>Darrell-Riggenbach, <a href="https://arxiv.org/abs/2308.13008">$\TR$ of quasiregular semiperfect rings is even</a></li>
-</ul>
-
-<h2>Genuine equivariance</h2>
-<ul>
-  <li>Hu-Kriz-Somberg, <a href="https://arxiv.org/abs/2211.12381">On the equivariant motivic filtration of the topological Hochschild homology of polynomial algebras</a></li>
-  <li>Sulyma, <a href="https://arxiv.org/abs/2007.13817">A slice refinement of Bökstedt periodicity</a></li>
-  <li>Sulyma, <a href="https://arxiv.org/abs/2205.12151">\(\mathrm{RO}(\mathbb T)\)-graded \(\mathrm{TF}\) of perfectoid rings</a></li>
-  <li class="major">Sulyma, <a href="https://arxiv.org/abs/2309.03181">Prisms and Tambara functors I: Twisted powers, transversality, and the perfect sandwich</a></li>
-</ul>
-
-<h2>Cartier smoothness</h2>
-<ul>
-  <li>Bhatt-Mathew, <a href="https://arxiv.org/abs/2202.04818v2">Syntomic complexes and $p$-adic étale Tate twists</a></li>
-  <li>Bouis, <a href="https://arxiv.org/abs/2211.16371">Cartier smoothness in prismatic cohomology</a></li>
-  <li>Kim, <a href="https://arxiv.org/abs/2306.01063">Topological cyclic homology of Cartier smooth rings</a></li>
-</ul>
-
-<h2>de Rham cohomology</h2>
-<ul>
-  <li>Li-Mondal, <a href="https://arxiv.org/abs/2109.04303">On endomorphisms of the de Rham cohomology functor</a></li>
-  <li>Mondal, <a href="https://arxiv.org/abs/2101.03146">$\mathbb G_a^{\mathrm{perf}}$-modules and de Rham cohomology</a></li>
-  <li>Raksit, <a href="https://arxiv.org/abs/2007.02576">Hochschild homology and the derived de Rham complex revisited</a></li>
-  <li>Ariotta(-Krause), <a href="https://arxiv.org/abs/2109.01017">Coherent cochain complexes and Beilinson $t$-structures</a></li>
-  <li>Mao, <a href="https://arxiv.org/abs/2107.02921">Revisiting derived crystalline cohomology</a></li>
-</ul>
-
-<h2>de Rham-Witt stuff</h2>
-<ul>
-  <li>Bhatt-Lurie-Mathew, <a href="https://arxiv.org/abs/1805.05501">Revisiting the de Rham-Witt complex</a></li>
-  <li>Molokov, <a href="https://arxiv.org/abs/2008.04956">Prismatic cohomology and de Rham-Witt forms</a></li>
-  <li>Devalapurkar-Mondal, <a href="https://arxiv.org/abs/2309.16623">$p$-typical curves on $p$-adic Tate twists and de Rham-Witt forms</a></li>
-</ul>
-
-<h2>Logarithmic stuff</h2>
-<ul>
-  <li>Koshikawa, <a href="https://arxiv.org/abs/2007.14037">Logarithmic Prismatic Cohomology I</a></li>
-  <li>Koshikawa-Yao, <a href="https://arxiv.org/abs/2306.00364">Logarithmic prismatic cohomology II</a></li>
-  <li>Binda-Lundemo-Park-Østvær, <a href="https://arxiv.org/abs/2306.01368">Logarithmic Prismatic Cohomology via Logarithmic THH</a></li>
-</ul>
-
-<h2>Hodge to de Rham degeneration</h2>
-<ul>
-  <li>Mathew, <a href="https://arxiv.org/abs/1710.09045">Kaledin's degeneration theorem and topological Hochschild homology</a></li>
-  <li>Antieau-Bhatt-Mathew, <a href="https://arxiv.org/abs/1909.11437">Counterexamples to HKR in characteristic $p$</a></li>
-  <li>Petrov, <a href="https://arxiv.org/abs/2302.11389">Non-decomposability of the de Rham complex and non-semisimplicity of the Sen operator</a></li>
-  <li>Devalapurkar, <a href="https://arxiv.org/abs/2303.00739">Lifting to truncated Brown-Peterson spectra and Hodge-de Rham degeneration in characteristic $p>0$</a></li>
-</ul>
-
-<h2>Fargues-Fontaine curve</h2>
-<ul>
-  <li><a href="https://www.math.ias.edu/~lurie/ffcurve/Arbeitsgemeinschaft2016GL.pdf">2016 Arbeitsgemeinschaft</a></li>
-  <li><a href="https://www.math.ias.edu/~lurie/FF.html">Lurie Fargues-Fontaine seminar</a>, especially Lecture 1 is inspiring</li>
-  <li class="notes"><a href="https://www.math.ias.edu/~lurie/205.html">Lurie Fargues-Fontaine course</a></li>
-  <li class="notes"><a href="https://www.math.uni-bonn.de/people/ja/thecurve/vorlesung_the_curve.pdf">Anschütz course notes</a></li>
-  <li>Hesselholt, <a href="https://arxiv.org/abs/2208.00168">Topological cyclic homology and the Fargues-Fontaine curve</a></li>
-</ul>
-
-<h2>Formal groups</h2>
-<ul>
-  <li>Moulinos-Robalo-Toën, <a href="https://arxiv.org/abs/1906.00118">A universal HKR theorem</a></li>
-  <li>Moulinos, <a href="https://arxiv.org/abs/1907.13562">The geometry of filtrations</a></li>
-  <li>Moulinos, <a href="https://arxiv.org/abs/2101.10262">Filtered formal groups, Cartier duality, and derived algebraic geometry</a></li>
-  <li class="major">Mondal-Reinecke, <a href="https://arxiv.org/abs/2302.10703">Unipotent homotopy theory of schemes</a></li>
-</ul>
-
-<h2>K-theory</h2>
-<ul>
-  <li class="major">Clausen-Mathew-Morrow, <a href="https://arxiv.org/abs/1803.10897">$\mathrm K$-theory and topological cyclic homology of henselian pairs</a></li>
-  <li>Bhatt-Clausen-Mathew, <a href="https://arxiv.org/abs/2001.11622">Remarks on $K(1)$-local $\mathrm K$-theory</a></li>
-  <li class="major">Antieau-Mathew-Morrow-Nikolaus, <a href="https://arxiv.org/abs/2003.12541">On the Beilinson fiber square</a></li>
-  <li class="major">Antieau-Krause-Nikolaus, <a href="https://arxiv.org/abs/2204.03420">On the K-theory of $\Z/p^n$</a></li>
-  <li class="major">Elmanto-Morrow, <a href="https://arxiv.org/abs/2309.08463">Motivic cohomology of equicharacteristic schemes</a></li>
-</ul>
-
-<h2>Stacky perspective / Prismatization</h2>
-<ul>
-  <li class="notes">Bhatt, <a href="https://www.math.ias.edu/~bhatt/teaching/mat549f22/lectures.pdf">Prismatic $F$-gauges</a></li>
-  <li class="start">Mondal, <a href="http://www-personal.umich.edu/~smondal/papers/the-stacky-approach.pdf">Reconstruction of the stacky approach to de Rham cohomology</a></li>
-  <li><a href="http://web.math.ku.dk/~larsh/papers/s09/oberwolfachseminar.pdf">Oberwolfach prismatization seminar</a></li>
-  <li>Drinfeld, <a href="https://arxiv.org/abs/2005.04746">Prismatization</a></li>
-  <li>Drinfeld, <a href="https://arxiv.org/abs/2107.11466">A 1-dimensional formal group over the prismatization of $\operatorname{Spf} \Z_p$</a></li>
-  <li>Bhatt-Lurie, <a href="https://arxiv.org/abs/2201.06124">The prismatization of $p$-adic formal schemes</a></li>
-  <li>Gurney, <a href="https://arxiv.org/abs/2301.12392">Prismatization over $\mathbf Z$</a></li>
-</ul>
-
-<h2>$\mathbb R$eal THH</h2>
-<ul>
-  <li>Dotto-Moi-Patchkoria, <a href="https://arxiv.org/abs/1711.10226">Real topological Hochschild homology</a></li>
-  <li>Dotto-Moi-Patchkoria, <a href="https://arxiv.org/abs/1901.02195">Witt Vectors, Polynomial Maps, and Real Topological Hochschild Homology</a></li>
-  <li>Dotto-Moi-Patchkoria, <a href="https://arxiv.org/abs/2106.04891">On the geometric fixed-points of real topological cyclic homology</a></li>
-  <li>Hahn-Wilson, <a href="https://arxiv.org/abs/1911.05687">Real topological Hochschild homology and the Segal conjecture</a></li>
-  <li>Hornbostel-Park, <a href="https://arxiv.org/abs/2209.12796">Real topological Hochschild homology of schemes</a></li>
-  <li>Hornbostel-Park, <a href="https://arxiv.org/abs/2310.11183">Real topological Hochschild homology of perfectoid rings</a></li>
-</ul>
+<div id="prismatic-widget">
+  <input type="text" id="prismatic-input" placeholder="Search" />
+  <div id="prismatic-filters">
+    <div>
+      <label>
+        <input type="checkbox" value="notes" />
+        <img
+          alt=""
+          class="prismatic-tag-icon"
+          data-icon="notes"
+          src="/assets/phosphor/notebook-fill.svg"
+        />
+        course notes</label
+      >
+      <label>
+        <input type="checkbox" value="start" />
+        <img
+          alt=""
+          class="prismatic-tag-icon"
+          data-icon="start"
+          src="/assets/phosphor/number-square-one-fill.svg"
+        />
+        good place to start</label
+      >
+      <label class="items-center" ="">
+        <input type="checkbox" value="major" />
+        <img
+          alt=""
+          class="prismatic-tag-icon"
+          data-icon="major"
+          src="/assets/phosphor/star-fill.svg"
+        />
+        major new idea</label
+      >
+      <label>
+        <input type="checkbox" value="solve" />
+        <img
+          alt=""
+          class="prismatic-tag-icon"
+          data-icon="solve"
+          src="/assets/phosphor/rocket-launch-fill.svg"
+        />
+        solves major problem
+      </label>
+    </div>
+    <div>
+      <label>
+        <input type="checkbox" value="big-picture" />
+        <img
+          alt=""
+          class="prismatic-tag-icon"
+          data-icon="big-picture"
+          src="/assets/phosphor/google-logo.svg"
+        />
+        big picture</label
+      >
+      <label>
+        <input type="checkbox" value="calculation" />
+        <img
+          alt=""
+          class="prismatic-tag-icon"
+          data-icon="calculation"
+          src="/assets/phosphor/calculator.svg"
+        />
+        calculation
+      </label>
+      <label>
+        <input type="checkbox" value="cartier-tr" /> Cartier modules / TR
+      </label>
+      <label><input type="checkbox" value="dr" /> de Rham cohomology</label>
+      <label><input type="checkbox" value="drw" /> de Rham-Witt stuff</label>
+      <label>
+        <input type="checkbox" value="even" />
+        <!--        <img
+          alt=""
+          class="prismatic-tag-icon"
+          data-icon="even"
+          src="/assets/phosphor/funnel-simple.svg"
+        />-->
+        even filtration
+      </label>
+      <label>
+        <input type="checkbox" value="fargues-fontaine" />
+        <img
+          alt=""
+          class="prismatic-tag-icon"
+          data-icon="fargues-fontaine"
+          src="/assets/phosphor/meta-logo.svg"
+        />
+        Fargues-Fontaine curve
+      </label>
+    </div>
+    <div>
+      <label>
+        <input type="checkbox" value="formal-groups" />
+        <img
+          alt=""
+          class="prismatic-tag-icon"
+          data-icon="formal-groups"
+          src="/assets/phosphor/wine-fill.svg"
+        />
+        formal groups
+      </label>
+      <label>
+        <input type="checkbox" value="hodge-de-rham" />
+        Hodge to de Rham degeneration
+      </label>
+      <label>
+        <input type="checkbox" value="genuine" />
+        <img
+          alt=""
+          class="prismatic-tag-icon"
+          data-icon="genuine"
+          src="/assets/phosphor/google-logo.svg"
+        />
+        genuine equivariance</label
+      >
+      <label>
+        <input type="checkbox" value="log" />
+        <img
+          alt=""
+          class="prismatic-tag-icon"
+          data-icon="log"
+          src="/assets/phosphor/log-fill.svg"
+        />
+        logarithmic stuff
+      </label>
+      <label>
+        <input type="checkbox" value="prism" />
+        <img
+          alt=""
+          class="prismatic-tag-icon"
+          data-icon="prism"
+          src="/prism.svg"
+        />
+        prismatic cohomology
+      </label>
+      <label>
+        <input type="checkbox" value="real" />
+        <img
+          alt=""
+          class="prismatic-tag-icon"
+          data-icon="real"
+          src="/assets/mathbbR.svg"
+        />
+        Real stuff
+      </label>
+      <label>
+        <input type="checkbox" value="stacky" />
+        <img
+          alt=""
+          class="prismatic-tag-icon"
+          data-icon="stacky"
+          src="/assets/phosphor/stack.svg"
+        />
+        stacky perspective
+      </label>
+      <label><input type="checkbox" value="thh" /> THH</label>
+    </div>
+  </div>
+  <output id="prismatic-list"></output>
+</div>
+<script src="/js/prismatic.js"></script>
