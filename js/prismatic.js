@@ -108,6 +108,11 @@
       color: "forestgreen",
       icon: "google-logo",
     },
+    "hodge-de-rham": {
+      alt: "Hodge to de Rham degeneration",
+      color: "darkturquoise",
+      icon: "/assets/phosphor/skull-fill.svg",
+    },
     k: {
       alt: "K-theory",
       color: "gray",

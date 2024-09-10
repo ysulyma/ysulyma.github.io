@@ -86,10 +86,12 @@ permalink: /prismatic
     vertical-align: middle;
   }
 
+  .prismatic-tag-dr,
+  .prismatic-tag-drw,
+  .prismatic-tag-k,
   .prismatic-tag-thh,
   .prismatic-tag-tr,
-  .prismatic-tag-dr,
-  .prismatic-tag-drw {
+  .prismatic-tag-real {
     height: 12px;
   }
 </style>
@@ -173,7 +175,7 @@ permalink: /prismatic
         <input type="checkbox" value="tr" />
         <img
           alt=""
-          class="prismatic-tag-icon"
+          class="prismatic-tag-icon prismatic-tag-tr"
           data-icon="tr"
           src="/assets/TR.svg"
         />
@@ -193,7 +195,7 @@ permalink: /prismatic
         <input type="checkbox" value="dr" />
         <img
           alt=""
-          class="prismatic-tag-icon"
+          class="prismatic-tag-icon prismatic-tag-dr"
           data-icon="dr"
           src="/assets/Omega.svg"
         />
@@ -203,7 +205,7 @@ permalink: /prismatic
         <input type="checkbox" value="drw" />
         <img
           alt=""
-          class="prismatic-tag-icon"
+          class="prismatic-tag-icon prismatic-tag-drw"
           data-icon="drw"
           src="/assets/WOmega.svg"
         />
@@ -253,13 +255,19 @@ permalink: /prismatic
       </label>
       <label>
         <input type="checkbox" value="hodge-de-rham" />
+        <img
+          alt=""
+          class="prismatic-tag-icon"
+          data-icon="hodge-de-rham"
+          src="/assets/phosphor/skull-fill.svg"
+        />
         Hodge to de Rham degeneration
       </label>
       <label>
         <input type="checkbox" value="k" />
         <img
           alt=""
-          class="prismatic-tag-icon"
+          class="prismatic-tag-icon prismatic-tag-k"
           data-icon="k"
           src="/assets/K.svg"
         />
@@ -289,7 +297,7 @@ permalink: /prismatic
         <input type="checkbox" value="real" />
         <img
           alt=""
-          class="prismatic-tag-icon"
+          class="prismatic-tag-icon prismatic-tag-real"
           data-icon="real"
           src="/assets/mathbbR.svg"
         />
@@ -309,7 +317,7 @@ permalink: /prismatic
         <input type="checkbox" value="thh" />
         <img
           alt=""
-          class="prismatic-tag-icon"
+          class="prismatic-tag-icon prismatic-tag-thh"
           data-icon="thh"
           src="/assets/THH.svg"
         />
