@@ -62,7 +62,7 @@
   "Bals",
   {
     "authors": ["Bals"],
-    "tags": ["cartier-tr"],
+    "tags": ["tr"],
     "title": "The Topological Cartier-Raynaud Ring",
     "href": "https://arxiv.org/abs/2404.10724"
   },
@@ -429,35 +429,35 @@
 
   {
     "authors": ["McCandless"],
-    "tags": ["cartier-tr"],
+    "tags": ["tr"],
     "title": "On curves in $\\mathrm K$-theory and $\\mathrm{TR}$",
     "href": "https://arxiv.org/abs/2102.08281"
   },
 
   {
     "authors": ["Mondal"],
-    "tags": ["cartier-tr"],
+    "tags": ["tr"],
     "title": "Dieudonné theory via cohomology of classifying stacks",
     "href": "https://arxiv.org/abs/2002.05413"
   },
 
   {
     "authors": ["Dotto", "Krause", "Nikolaus", "Patchkoria"],
-    "tags": ["cartier-tr"],
+    "tags": ["tr"],
     "title": "Witt vectors with coefficients and characteristic polynomials over non-commutative rings",
     "href": "https://arxiv.org/abs/2002.01538"
   },
 
   {
     "authors": ["Mathew"],
-    "tags": ["cartier-tr"],
+    "tags": ["tr"],
     "title": "On $K(1)$-local $\\mathrm{TR}$",
     "href": "https://arxiv.org/abs/2005.08744"
   },
 
   {
     "authors": ["Darrell", "Riggenbach"],
-    "tags": ["cartier-tr"],
+    "tags": ["tr"],
     "title": "$\\TR$ of quasiregular semiperfect rings is even",
     "href": "https://arxiv.org/abs/2308.13008"
   },
@@ -542,7 +542,7 @@
   "Magidson",
   {
     "authors": ["Magidson"],
-    "tags": ["cartier-tr"],
+    "tags": ["tr"],
     "title": "Witt vectors and $\\delta$-Cartier rings",
     "href": "https://arxiv.org/abs/2409.03877"
   },

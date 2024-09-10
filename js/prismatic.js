@@ -73,6 +73,11 @@
       color: "red",
       icon: "calculator",
     },
+    // "cartier-smooth": {
+    //   alt: "Cartier smoothness",
+    //   color: "skyblue",
+    //   icon: "sailboat",
+    // },
     dr: {
       alt: "de Rham cohomology",
       color: "gray",
@@ -128,6 +133,16 @@
       color: "teal",
       icon: "stack",
     },
+    thh: {
+      alt: "Topological Hochschild homology",
+      color: "gray",
+      icon: "/assets/THH.svg",
+    },
+    tr: {
+      alt: "Cartier modules / TR",
+      color: "gray",
+      icon: "/assets/TR.svg",
+    },
   };
 
   const primaryTags = new Set(["notes", "start", "major", "solve"]);
@@ -182,17 +197,16 @@
         svg = svg.replace(/<\?xml[^>]*>/, "");
 
         for (const element of $$(`img[data-icon="${key}"]`)) {
-          // if (key === "k") {
-          //   return;
-          // }
-          // if (key === "real") {
-          //   return;
-          // }
           const svgElt = $h(svg);
           svgElt.setAttribute(
             "class",
             `prismatic-tag-icon prismatic-tag-${key}`,
           );
+
+          // aspect ratio
+          svgElt.style.aspectRatio = `${svgElt.width.baseVal.value} / ${svgElt.height.baseVal.value}`;
+          svgElt.removeAttribute("width");
+          svgElt.removeAttribute("height");
 
           for (const child of $$("g, path", svgElt)) {
             child.setAttribute("fill", tagIcons[key].color);
@@ -306,6 +320,11 @@
                     svg.setAttribute("title", tagIcons[tag].alt);
 
                     $("path", svg).style.fill = tagIcons[tag].color;
+
+                    // aspect ratio
+                    svg.style.aspectRatio = `${svg.width.baseVal.value} / ${svg.height.baseVal.value}`;
+                    svg.removeAttribute("width");
+                    svg.removeAttribute("height");
 
                     svg.setAttribute(
                       "class",

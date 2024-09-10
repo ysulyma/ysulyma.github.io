@@ -83,12 +83,14 @@ permalink: /prismatic
 
   .prismatic-tag-icon {
     height: 16px;
-    width: 16px;
     vertical-align: middle;
   }
 
-  .prismatic-tag-icon.prismatic-tag-drw {
-    width: 32px;
+  .prismatic-tag-thh,
+  .prismatic-tag-tr,
+  .prismatic-tag-dr,
+  .prismatic-tag-drw {
+    height: 12px;
   }
 </style>
 
@@ -168,11 +170,23 @@ permalink: /prismatic
         calculation
       </label>
       <label>
-        <input type="checkbox" value="cartier-tr" />
+        <input type="checkbox" value="tr" />
+        <img
+          alt=""
+          class="prismatic-tag-icon"
+          data-icon="tr"
+          src="/assets/TR.svg"
+        />
         Cartier modules / TR
       </label>
       <label>
         <input type="checkbox" value="cartier-smooth" />
+        <!--<img
+          alt=""
+          class="prismatic-tag-icon"
+          data-icon="cartier-smooth"
+          src="/assets/phosphor/sailboat.svg"
+        />-->
         Cartier smoothness
       </label>
       <label>
@@ -291,7 +305,16 @@ permalink: /prismatic
         />
         stacky perspective
       </label>
-      <label><input type="checkbox" value="thh" /> THH</label>
+      <label>
+        <input type="checkbox" value="thh" />
+        <img
+          alt=""
+          class="prismatic-tag-icon"
+          data-icon="thh"
+          src="/assets/THH.svg"
+        />
+        THH
+      </label>
     </div>
   </div>
   <output id="prismatic-list"></output>
