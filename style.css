@@ -37,10 +37,13 @@ body {
   color: var(--gray-12);
 }
 
-
 .site-header {
   border-top: none;
   border-bottom-color: var(--gray-5) !important;
+}
+
+.site-header > .wrapper {
+  position: relative;
 }
 
 .site-title {
@@ -55,15 +58,47 @@ body {
   color: var(--gray-11);
 }
 
+#theme-switcher {
+  display: flex;
+  width: min-content;
+
+  position: absolute;
+  right: 0;
+  top: 50%;
+  translate: 100% -50%;
+}
+
+#theme-switcher > button {
+  background: var(--gray-4);
+  border: none;
+  color: var(--gray-12);
+  font-size: 16px;
+  padding: 4px 8px;
+}
+
+#theme-switcher > button[aria-checked="true"] {
+  background: var(--blue-9);
+}
+
+#theme-switcher > button:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+#theme-switcher > button:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
 h2 {
   margin-top: 0.5em;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   color: var(--blue-9);
 }
 
-a:link:hover, a:visited:hover  {
+a:link:hover,
+a:visited:hover {
   color: var(--blue-8);
 }
 
@@ -100,7 +135,7 @@ dfn {
 }
 
 .post li {
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 /* blocks */
@@ -131,7 +166,7 @@ dfn {
 }
 
 .example p {
-  margin: .25em 0;
+  margin: 0.25em 0;
 }
 
 .example li {
@@ -145,7 +180,6 @@ dfn {
 
 .exercise > header {
   font-weight: bold;
-
 }
 
 .remark {
@@ -220,10 +254,11 @@ dfn {
 }
 
 /* code blocks */
-pre, code {
-	background-color: var(--gray-2);
-	border-color: var(--gray-4);
-	color: var(--gray-12);
+pre,
+code {
+  background-color: var(--gray-2);
+  border-color: var(--gray-4);
+  color: var(--gray-12);
 }
 
 .highlight {
@@ -231,7 +266,8 @@ pre, code {
   color: var(--gray-12);
 }
 
-.highlight pre, .highlight code {
+.highlight pre,
+.highlight code {
   background-color: transparent;
 }
 
@@ -255,7 +291,7 @@ pre, code {
 }
 
 .highlight .mi {
-	color: var(--pink-11);
+  color: var(--pink-11);
 }
 
 .highlight .na {
@@ -319,3 +355,26 @@ pre, code {
 .experts {
   color: var(--gray-10);
 }
+
+/* classic style */
+.classic * {
+  font-family: serif !important;
+}
+
+.classic .site-header {
+  border-bottom: 2px solid #808080 !important;
+}
+
+.classic .site-footer {
+  border-top: 2px solid #808080 !important;
+}
+
+.classic .wrapper {
+  margin: 0;
+}
+
+.classic :link,
+.classic :visited {
+  color: revert !important;
+}
+

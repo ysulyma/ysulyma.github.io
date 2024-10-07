@@ -1,6 +1,9 @@
 <header class="site-header">
-
   <div class="wrapper">
+    <div id="theme-switcher" role="radiogroup">
+      <button aria-checked="true" role="radio" data-value="modern">Modern</button>
+      <button role="radio" data-value="classic">Classic</button>
+    </div>
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
