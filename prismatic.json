@@ -6,6 +6,12 @@
     "title": "Algebraic K-theory of real toplogical K-theory",
     "href": "https://arxiv.org/abs/2309.11463"
   },
+  {
+    "authors": ["Angelini-Knoll", "Gerhardt", "Hill"],
+    "tags": ["real"],
+    "title": "Real topological Hochschild homology via the norm and Real Witt vectors",
+    "href": "https://arxiv.org/abs/2111.06970"
+  },
 
   "Anschütz",
   {
@@ -215,7 +221,13 @@
     "href": "https://arxiv.org/abs/2002.01538"
   },
   {
-    "authors": ["Dotto", "Moi", "Patchkoria"],
+    "authors": ["Dotto", "Krause", "Nikolaus", "Patchkoria"],
+    "tags": ["tr"],
+    "title": "Witt vectors with coefficients and TR",
+    "href": "https://arxiv.org/abs/2312.12971"
+  },
+  {
+    "authors": ["Dotto", "Moi", "Patchkoria", "Reeh"],
     "tags": ["real"],
     "title": "Real topological Hochschild homology",
     "href": "https://arxiv.org/abs/1711.10226"
@@ -270,6 +282,12 @@
   },
 
   "Hahn",
+  {
+    "authors": ["Hahn", "Levy", "Senger"],
+    "tags": ["calculation", "k", "stacky"],
+    "title": "Crystallinity for reduced syntomic cohomology and the mod $(p,v_1^{p^{n−2}})$ $K$-theory of $\\mathbb Z/p^n$",
+    "href": "https://arxiv.org/abs/2409.20543"
+  },
   {
     "authors": ["Hahn", "Wilson"],
     "tags": ["real"],
@@ -349,6 +367,14 @@
     "href": "https://kskedlaya.org/prismatic/frontmatter-1.html"
   },
 
+  "Keenan",
+  {
+    "authors": ["Keenan", "McCandless"],
+    "tags": ["tr"],
+    "title": "A chromatic vanishing result for TR",
+    "href": "https://arxiv.org/abs/2310.04388"
+  },
+
   "Kim",
   {
     "authors": ["Kim"],
@@ -379,10 +405,22 @@
     "href": "https://arxiv.org/abs/1907.03477"
   },
   {
+    "authors": ["Krause", "Senger"],
+    "tags": ["k"],
+    "title": "Exact bounds for even vanishing of $K_*(\\mathbb Z/p^n)$",
+    "href": "https://arxiv.org/abs/2409.20523"
+  },
+  {
     "authors": ["Krause", "Nikolaus"],
     "tags": ["thh", "notes"],
     "title": "Lectures on THH and cyclotomic spectra",
     "href": "https://www.uni-muenster.de/IVV5WS/WebHop/user/nikolaus/Papers/Lectures.pdf"
+  },
+  {
+    "authors": ["Krause", "McCandless", "Nikolaus"],
+    "tags": ["tr"],
+    "title": "Polygonic spectra and TR with coefficients",
+    "href": "https://arxiv.org/abs/2302.07686"
   },
 
   "Lee",
