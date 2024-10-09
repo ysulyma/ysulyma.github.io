@@ -5,6 +5,7 @@ summary: "tl;dr: using calculus to detect finitely many things representing the 
 image: /assets/social/what-study-2.png
 ---
 
+<meta http-equiv="refresh" content="0; url=https://beta.epiplexis.xyz/what-study/intro" />
 Over the years, friends, family, and strangers have asked me if I can explain the math that I do. This is tricky; because math is so cumulative, even professional mathematicians usually can't understand each other's work very well unless they work in the same field. (This has the advantage of making it difficult to talk about work at parties.) This series is my attempt to share the stuff I think about and why I think it's so fun.
 
 My area of math is called **homotopy theory**. Historically, this grew out of **topology**, which is a form of **geometry**. Nowadays, it's increasingly viewed as foundational to math itself, so it interacts with a lot of other fields. In particular, I'm very interested in how it interacts with a subject called **arithmetic geometry**, which tries to incorporate things like prime numbers into geometry. The field is in a bit of a golden age right now: major papers are being posted nearly every month, and decades-old problems are falling one after another. 

@@ -5,6 +5,7 @@ summary: We distinguish between parametric and implicit equations, and give code
 image: /assets/social/params-coords.png
 ---
 
+<meta http-equiv="refresh" content="0; url=https://beta.epiplexis.xyz/gng/cg/params-coords" />
 So far we've talked about representing data using (n-tuples of) numbers. In this post I want to take a closer look at how we do this, and distinguish between two different ways of describing spaces.
 
 ## Example: the unit circle
