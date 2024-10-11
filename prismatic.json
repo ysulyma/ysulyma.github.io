@@ -85,6 +85,20 @@
     "href": "https://arxiv.org/abs/2109.01017"
   },
 
+  "Ayala",
+  {
+    "authors": ["Ayala", "Mazel-Gee", "Rozenblyum"],
+    "tags": ["thh"],
+    "title": "The geometry of the cyclotomic trace",
+    "href": "https://arxiv.org/abs/1710.06409"
+  },
+  {
+    "authors": ["Ayala", "Mazel-Gee", "Rozenblyum"],
+    "tags": ["thh"],
+    "title": "A naive approach to genuine $G$-spectra and cyclotomic spectra",
+    "href": "https://arxiv.org/abs/1710.06416"
+  },
+
   "Bals",
   {
     "authors": ["Bals"],
@@ -160,7 +174,7 @@
     "authors": ["Bhatt", "Mathew"],
     "tags": ["cartier-smooth"],
     "title": "Syntomic complexes and $p$-adic étale Tate twists",
-    "href": "https://arxiv.org/abs/2202.04818v2"
+    "href": "https://arxiv.org/abs/2202.04818"
   },
   {
     "authors": ["Bhatt", "Scholze"],
