@@ -272,6 +272,12 @@
     "title": "Motivic cohomology of equicharacteristic schemes",
     "href": "https://arxiv.org/abs/2309.08463"
   },
+  {
+    "authors": ["Elmanto", "Riggenbach"],
+    "tags": ["calculation", "k"],
+    "title": "On the $K$-theory of the $p$-adic unit disk",
+    "href": "https://arxiv.org/abs/2410.07101"
+  },
 
   "Gurney",
   {
@@ -481,7 +487,7 @@
   {
     "authors": ["Mao"],
     "tags": ["drw", "genuine"],
-    "title": "Noncommutative relative de Rham--Witt complex via the norm",
+    "title": "Noncommutative relative de Rham-Witt complex via the norm",
     "href": "https://arxiv.org/abs/2410.05998"
   },
   {
