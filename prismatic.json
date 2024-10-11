@@ -1,10 +1,22 @@
 [
   "Angelini-Knoll",
   {
+    "authors": ["Angelini-Knoll"],
+    "tags": ["formal-groups", "thh"],
+    "title": "Complex orientations and $\\mathrm{TP}$ of complete DVRS",
+    "href": "https://arxiv.org/abs/2104.07306"
+  },
+  {
     "authors": ["Angelini-Knoll", "Ausoni", "Rognes"],
     "tags": ["calculation", "even"],
     "title": "Algebraic K-theory of real toplogical K-theory",
     "href": "https://arxiv.org/abs/2309.11463"
+  },
+  {
+    "authors": ["Angelini-Knoll", "Hahn", "Wilson"],
+    "tags": ["calculation", "even"],
+    "title": "Syntomic cohomology of Morava K-theory",
+    "href": "https://arxiv.org/abs/2410.07048"
   },
   {
     "authors": ["Angelini-Knoll", "Gerhardt", "Hill"],
