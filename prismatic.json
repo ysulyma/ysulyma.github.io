@@ -480,6 +480,24 @@
   },
   {
     "authors": ["Mao"],
+    "tags": ["drw", "genuine"],
+    "title": "Noncommutative relative de Rham--Witt complex via the norm",
+    "href": "https://arxiv.org/abs/2410.05998"
+  },
+  {
+    "authors": ["Mao"],
+    "tags": ["genuine", "thh"],
+    "title": "Equivariant aspects of de-completing cyclic homology",
+    "href": "https://arxiv.org/abs/2410.05994"
+  },
+  {
+    "authors": ["Mao"],
+    "tags": ["thh"],
+    "title": "Perfectoid rings as Thom spectra",
+    "href": "https://arxiv.org/abs/2003.08697"
+  },
+  {
+    "authors": ["Mao"],
     "tags": ["genuine", "drw"],
     "title": "Prismatic logarithm and prismatic Hochschild homology via norm",
     "href": "https://arxiv.org/abs/2409.04400"
