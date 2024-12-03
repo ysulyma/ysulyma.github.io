@@ -1,4 +1,18 @@
 [
+  "Andriopoulos",
+  {
+    "authors": ["Andriopoulos"],
+    "tags": ["tr"],
+    "title": "TR and the $r$-Nygaard filtered prismatic cohomology",
+    "href": "https://arxiv.org/abs/2412.00914"
+  },
+  {
+    "authors": ["Andriopoulos"],
+    "tags": ["log", "tr"],
+    "title": "TR with logarithmic poles and the de Rham-Witt complex",
+    "href": "https://arxiv.org/abs/2412.00929"
+  },
+
   "Angelini-Knoll",
   {
     "authors": ["Angelini-Knoll"],
