@@ -1,811 +1,819 @@
 [
-  "Andriopoulos",
-  {
-    "authors": ["Andriopoulos"],
-    "tags": ["tr"],
-    "title": "TR and the $r$-Nygaard filtered prismatic cohomology",
-    "href": "https://arxiv.org/abs/2412.00914"
-  },
-  {
-    "authors": ["Andriopoulos"],
-    "tags": ["log", "tr"],
-    "title": "TR with logarithmic poles and the de Rham-Witt complex",
-    "href": "https://arxiv.org/abs/2412.00929"
-  },
+	"Andriopoulos",
+	{
+		"authors": ["Andriopoulos"],
+		"tags": ["tr"],
+		"title": "TR and the $r$-Nygaard filtered prismatic cohomology",
+		"href": "https://arxiv.org/abs/2412.00914"
+	},
+	{
+		"authors": ["Andriopoulos"],
+		"tags": ["log", "tr"],
+		"title": "TR with logarithmic poles and the de Rham-Witt complex",
+		"href": "https://arxiv.org/abs/2412.00929"
+	},
 
-  "Angelini-Knoll",
-  {
-    "authors": ["Angelini-Knoll"],
-    "tags": ["formal-groups", "thh"],
-    "title": "Complex orientations and $\\mathrm{TP}$ of complete DVRS",
-    "href": "https://arxiv.org/abs/2104.07306"
-  },
-  {
-    "authors": ["Angelini-Knoll", "Ausoni", "Rognes"],
-    "tags": ["calculation", "even"],
-    "title": "Algebraic K-theory of real toplogical K-theory",
-    "href": "https://arxiv.org/abs/2309.11463"
-  },
-  {
-    "authors": ["Angelini-Knoll", "Hahn", "Wilson"],
-    "tags": ["calculation", "even"],
-    "title": "Syntomic cohomology of Morava K-theory",
-    "href": "https://arxiv.org/abs/2410.07048"
-  },
-  {
-    "authors": ["Angelini-Knoll", "Gerhardt", "Hill"],
-    "tags": ["real"],
-    "title": "Real topological Hochschild homology via the norm and Real Witt vectors",
-    "href": "https://arxiv.org/abs/2111.06970"
-  },
+	"Angelini-Knoll",
+	{
+		"authors": ["Angelini-Knoll"],
+		"tags": ["formal-groups", "thh"],
+		"title": "Complex orientations and $\\mathrm{TP}$ of complete DVRS",
+		"href": "https://arxiv.org/abs/2104.07306"
+	},
+	{
+		"authors": ["Angelini-Knoll", "Ausoni", "Rognes"],
+		"tags": ["calculation", "even"],
+		"title": "Algebraic K-theory of real toplogical K-theory",
+		"href": "https://arxiv.org/abs/2309.11463"
+	},
+	{
+		"authors": ["Angelini-Knoll", "Hahn", "Wilson"],
+		"tags": ["calculation", "even"],
+		"title": "Syntomic cohomology of Morava K-theory",
+		"href": "https://arxiv.org/abs/2410.07048"
+	},
+	{
+		"authors": ["Angelini-Knoll", "Gerhardt", "Hill"],
+		"tags": ["real"],
+		"title": "Real topological Hochschild homology via the norm and Real Witt vectors",
+		"href": "https://arxiv.org/abs/2111.06970"
+	},
 
-  "Anschütz",
-  {
-    "authors": ["Anschütz"],
-    "tags": ["fargues-fontaine", "notes"],
-    "title": "Anschütz course notes",
-    "href": "https://www.math.uni-bonn.de/people/ja/thecurve/vorlesung_the_curve.pdf"
-  },
-  {
-    "authors": ["Anschütz", "le Bras"],
-    "tags": ["thh"],
-    "title": "The $p$-completed cyclotomic trace in degree 2",
-    "href": "https://arxiv.org/abs/1907.10530"
-  },
+	"Anschütz",
+	{
+		"authors": ["Anschütz"],
+		"tags": ["fargues-fontaine", "notes"],
+		"title": "Anschütz course notes",
+		"href": "https://www.math.uni-bonn.de/people/ja/thecurve/vorlesung_the_curve.pdf"
+	},
+	{
+		"authors": ["Anschütz", "le Bras"],
+		"tags": ["thh"],
+		"title": "The $p$-completed cyclotomic trace in degree 2",
+		"href": "https://arxiv.org/abs/1907.10530"
+	},
 
-  "Antieau",
-  {
-    "authors": ["Antieau", "Bhatt", "Mathew"],
-    "tags": ["hodge-de-rham"],
-    "title": "Counterexamples to HKR in characteristic $p$",
-    "href": "https://arxiv.org/abs/1909.11437"
-  },
-  {
-    "authors": ["Antieau", "Krause", "Nikolaus"],
-    "tags": ["solve", "k"],
-    "title": "On the K-theory of $\\Z/p^n$—Announcement",
-    "href": "https://arxiv.org/abs/2204.03420"
-  },
-  {
-    "authors": ["Antieau", "Krause", "Nikolaus"],
-    "tags": ["solve", "k"],
-    "title": "On the K-theory of $\\Z/p^n$",
-    "href": "https://arxiv.org/abs/2405.04329"
-  },
-  {
-    "authors": ["Antieau", "Krause", "Nikolaus"],
-    "tags": ["prism", "major"],
-    "title": "Prismatic cohomology relative to $\\delta$-rings",
-    "href": "https://arxiv.org/abs/2310.12770"
-  },
-  {
-    "authors": ["Antieau", "Mathew", "Morrow", "Nikolaus"],
-    "tags": ["major", "k"],
-    "title": "On the Beilinson fiber square",
-    "href": "https://arxiv.org/abs/2003.12541"
-  },
-  {
-    "authors": ["Antieau", "Nikolaus"],
-    "tags": ["major", "tr"],
-    "title": "Cartier modules and cyclotomic spectra",
-    "href": "https://arxiv.org/abs/1809.01714"
-  },
-  {
-    "authors": ["Antieau", "Riggenbach"],
-    "tags": ["even", "formal-groups", "tr"],
-    "title": "Cyclotomic synthetic spectra",
-    "href": "https://arxiv.org/abs/2411.19929"
-  },
+	"Antieau",
+	{
+		"authors": ["Antieau", "Bhatt", "Mathew"],
+		"tags": ["hodge-de-rham"],
+		"title": "Counterexamples to HKR in characteristic $p$",
+		"href": "https://arxiv.org/abs/1909.11437"
+	},
+	{
+		"authors": ["Antieau", "Krause", "Nikolaus"],
+		"tags": ["solve", "k"],
+		"title": "On the K-theory of $\\Z/p^n$—Announcement",
+		"href": "https://arxiv.org/abs/2204.03420"
+	},
+	{
+		"authors": ["Antieau", "Krause", "Nikolaus"],
+		"tags": ["solve", "k"],
+		"title": "On the K-theory of $\\Z/p^n$",
+		"href": "https://arxiv.org/abs/2405.04329"
+	},
+	{
+		"authors": ["Antieau", "Krause", "Nikolaus"],
+		"tags": ["prism", "major"],
+		"title": "Prismatic cohomology relative to $\\delta$-rings",
+		"href": "https://arxiv.org/abs/2310.12770"
+	},
+	{
+		"authors": ["Antieau", "Mathew", "Morrow", "Nikolaus"],
+		"tags": ["major", "k"],
+		"title": "On the Beilinson fiber square",
+		"href": "https://arxiv.org/abs/2003.12541"
+	},
+	{
+		"authors": ["Antieau", "Nikolaus"],
+		"tags": ["major", "tr"],
+		"title": "Cartier modules and cyclotomic spectra",
+		"href": "https://arxiv.org/abs/1809.01714"
+	},
+	{
+		"authors": ["Antieau", "Riggenbach"],
+		"tags": ["even", "formal-groups", "tr"],
+		"title": "Cyclotomic synthetic spectra",
+		"href": "https://arxiv.org/abs/2411.19929"
+	},
 
-  "Ariotta",
-  {
-    "authors": ["Ariotta", "Krause"],
-    "tags": ["dr"],
-    "title": "Coherent cochain complexes and Beilinson $t$-structures",
-    "href": "https://arxiv.org/abs/2109.01017"
-  },
+	"Ariotta",
+	{
+		"authors": ["Ariotta", "Krause"],
+		"tags": ["dr"],
+		"title": "Coherent cochain complexes and Beilinson $t$-structures",
+		"href": "https://arxiv.org/abs/2109.01017"
+	},
 
-  "Ayala",
-  {
-    "authors": ["Ayala", "Mazel-Gee", "Rozenblyum"],
-    "tags": ["thh"],
-    "title": "The geometry of the cyclotomic trace",
-    "href": "https://arxiv.org/abs/1710.06409"
-  },
-  {
-    "authors": ["Ayala", "Mazel-Gee", "Rozenblyum"],
-    "tags": ["thh"],
-    "title": "A naive approach to genuine $G$-spectra and cyclotomic spectra",
-    "href": "https://arxiv.org/abs/1710.06416"
-  },
+	"Ayala",
+	{
+		"authors": ["Ayala", "Mazel-Gee", "Rozenblyum"],
+		"tags": ["thh"],
+		"title": "The geometry of the cyclotomic trace",
+		"href": "https://arxiv.org/abs/1710.06409"
+	},
+	{
+		"authors": ["Ayala", "Mazel-Gee", "Rozenblyum"],
+		"tags": ["thh"],
+		"title": "A naive approach to genuine $G$-spectra and cyclotomic spectra",
+		"href": "https://arxiv.org/abs/1710.06416"
+	},
 
-  "Bals",
-  {
-    "authors": ["Bals"],
-    "tags": ["tr"],
-    "title": "The Topological Cartier-Raynaud Ring",
-    "href": "https://arxiv.org/abs/2404.10724"
-  },
+	"Bals",
+	{
+		"authors": ["Bals"],
+		"tags": ["tr"],
+		"title": "The Topological Cartier-Raynaud Ring",
+		"href": "https://arxiv.org/abs/2404.10724"
+	},
 
-  "Binda",
-  {
-    "authors": ["Binda", "Lundemo", "Park-Østvær"],
-    "tags": ["log", "thh"],
-    "title": "Logarithmic Prismatic Cohomology via Logarithmic THH",
-    "href": "https://arxiv.org/abs/2306.01368"
-  },
-  {
-    "authors": ["Binda", "Lundemo", "Merici", "Park"],
-    "tags": ["log", "thh"],
-    "title": "Logarithmic TC via the Infinite Root Stack and the Beilinson Fiber Square",
-    "href": "https://arxiv.org/abs/2408.15627"
-  },
+	"Binda",
+	{
+		"authors": ["Binda", "Lundemo", "Park-Østvær"],
+		"tags": ["log", "thh"],
+		"title": "Logarithmic Prismatic Cohomology via Logarithmic THH",
+		"href": "https://arxiv.org/abs/2306.01368"
+	},
+	{
+		"authors": ["Binda", "Lundemo", "Merici", "Park"],
+		"tags": ["log", "thh"],
+		"title": "Logarithmic TC via the Infinite Root Stack and the Beilinson Fiber Square",
+		"href": "https://arxiv.org/abs/2408.15627"
+	},
 
-  "Bhatt",
-  {
-    "authors": ["Bhatt"],
-    "tags": ["notes", "stacky"],
-    "title": "Prismatic $F$-gauges",
-    "href": "https://www.math.ias.edu/~bhatt/teaching/mat549f22/lectures.pdf"
-  },
-  {
-    "authors": ["Bhatt"],
-    "tags": ["big-picture", "start"],
-    "title": "Bhatt ICM address",
-    "href": "https://arxiv.org/abs/2112.12010"
-  },
-  {
-    "authors": ["Bhatt", "Morrow", "Scholze"],
-    "tags": ["major", "thh"],
-    "title": "BMS2",
-    "href": "https://arxiv.org/abs/1802.03261"
-  },
-  {
-    "authors": ["Bhatt"],
-    "tags": ["notes", "prism"],
-    "title": "Bhatt lecture notes",
-    "href": "http://www-personal.umich.edu/~bhattb/teaching/prismatic-columbia/"
-  },
-  {
-    "authors": ["Bhatt", "Clausen", "Mathew"],
-    "tags": ["k"],
-    "title": "Remarks on $K(1)$-local $\\mathrm K$-theory",
-    "href": "https://arxiv.org/abs/2001.11622"
-  },
-  {
-    "authors": ["Bhatt", "Lurie"],
-    "tags": ["major", "prism"],
-    "title": "Absolute prismatic cohomology",
-    "href": "https://arxiv.org/abs/2201.06120"
-  },
-  {
-    "authors": ["Bhatt", "Lurie"],
-    "tags": ["stacky"],
-    "title": "The prismatization of $p$-adic formal schemes",
-    "href": "https://arxiv.org/abs/2201.06124"
-  },
-  {
-    "authors": ["Bhatt", "Lurie", "Mathew"],
-    "tags": ["drw"],
-    "title": "Revisiting the de Rham-Witt complex",
-    "href": "https://arxiv.org/abs/1805.05501"
-  },
-  {
-    "authors": ["Bhatt", "Mathew"],
-    "tags": ["cartier-smooth"],
-    "title": "Syntomic complexes and $p$-adic étale Tate twists",
-    "href": "https://arxiv.org/abs/2202.04818"
-  },
-  {
-    "authors": ["Bhatt", "Scholze"],
-    "tags": ["major", "prism"],
-    "title": "Prisms and prismatic cohomology",
-    "href": "https://arxiv.org/abs/1905.08229"
-  },
+	"Bhatt",
+	{
+		"authors": ["Bhatt"],
+		"tags": ["notes", "stacky"],
+		"title": "Prismatic $F$-gauges",
+		"href": "https://www.math.ias.edu/~bhatt/teaching/mat549f22/lectures.pdf"
+	},
+	{
+		"authors": ["Bhatt"],
+		"tags": ["big-picture", "start"],
+		"title": "Bhatt ICM address",
+		"href": "https://arxiv.org/abs/2112.12010"
+	},
+	{
+		"authors": ["Bhatt", "Morrow", "Scholze"],
+		"tags": ["major", "thh"],
+		"title": "BMS2",
+		"href": "https://arxiv.org/abs/1802.03261"
+	},
+	{
+		"authors": ["Bhatt"],
+		"tags": ["notes", "prism"],
+		"title": "Bhatt lecture notes",
+		"href": "http://www-personal.umich.edu/~bhattb/teaching/prismatic-columbia/"
+	},
+	{
+		"authors": ["Bhatt", "Clausen", "Mathew"],
+		"tags": ["k"],
+		"title": "Remarks on $K(1)$-local $\\mathrm K$-theory",
+		"href": "https://arxiv.org/abs/2001.11622"
+	},
+	{
+		"authors": ["Bhatt", "Lurie"],
+		"tags": ["major", "prism"],
+		"title": "Absolute prismatic cohomology",
+		"href": "https://arxiv.org/abs/2201.06120"
+	},
+	{
+		"authors": ["Bhatt", "Lurie"],
+		"tags": ["stacky"],
+		"title": "The prismatization of $p$-adic formal schemes",
+		"href": "https://arxiv.org/abs/2201.06124"
+	},
+	{
+		"authors": ["Bhatt", "Lurie", "Mathew"],
+		"tags": ["drw"],
+		"title": "Revisiting the de Rham-Witt complex",
+		"href": "https://arxiv.org/abs/1805.05501"
+	},
+	{
+		"authors": ["Bhatt", "Mathew"],
+		"tags": ["cartier-smooth"],
+		"title": "Syntomic complexes and $p$-adic étale Tate twists",
+		"href": "https://arxiv.org/abs/2202.04818"
+	},
+	{
+		"authors": ["Bhatt", "Scholze"],
+		"tags": ["major", "prism"],
+		"title": "Prisms and prismatic cohomology",
+		"href": "https://arxiv.org/abs/1905.08229"
+	},
 
-  "Bouis",
-  {
-    "authors": ["Bouis"],
-    "tags": ["cartier-smooth", "prism"],
-    "title": "Cartier smoothness in prismatic cohomology",
-    "href": "https://arxiv.org/abs/2211.16371"
-  },
+	"Bouis",
+	{
+		"authors": ["Bouis"],
+		"tags": ["cartier-smooth", "prism"],
+		"title": "Cartier smoothness in prismatic cohomology",
+		"href": "https://arxiv.org/abs/2211.16371"
+	},
 
-  "Clausen",
-  {
-    "authors": ["Clausen", "Mathew", "Morrow"],
-    "tags": ["major", "k"],
-    "title": "$\\mathrm K$-theory and topological cyclic homology of henselian pairs",
-    "href": "https://arxiv.org/abs/1803.10897"
-  },
+	"Clausen",
+	{
+		"authors": ["Clausen", "Mathew", "Morrow"],
+		"tags": ["major", "k"],
+		"title": "$\\mathrm K$-theory and topological cyclic homology of henselian pairs",
+		"href": "https://arxiv.org/abs/1803.10897"
+	},
 
-  "Darrell",
-  {
-    "authors": ["Darrell", "Riggenbach"],
-    "tags": ["tr"],
-    "title": "$\\TR$ of quasiregular semiperfect rings is even",
-    "href": "https://arxiv.org/abs/2308.13008"
-  },
+	"Darrell",
+	{
+		"authors": ["Darrell", "Riggenbach"],
+		"tags": ["tr"],
+		"title": "$\\TR$ of quasiregular semiperfect rings is even",
+		"href": "https://arxiv.org/abs/2308.13008"
+	},
 
-  "Devalapurkar",
-  {
-    "authors": ["Devalapurkar"],
-    "tags": ["hodge-de-rham"],
-    "title": "Lifting to truncated Brown-Peterson spectra and Hodge-de Rham degeneration in characteristic $p>0$",
-    "href": "https://arxiv.org/abs/2303.00739"
-  },
-  {
-    "authors": ["Devalapurkar"],
-    "tags": ["even", "major"],
-    "title": "Topological Hochschild homology, truncated Brown-Peterson spectra, and a topological Sen operator",
-    "href": "https://sanathdevalapurkar.github.io/files/thh-Xn.pdf"
-  },
-  {
-    "authors": ["Devalapurkar", "Hahn", "Lawson", "Senger", "Wilson"],
-    "tags": ["even"],
-    "title": "Examples of disk algebras",
-    "href": "https://arxiv.org/abs/2302.11702"
-  },
-  {
-    "authors": ["Devalapurkar", "Misterka"],
-    "tags": ["even", "formal-groups", "start"],
-    "title": "Generalized $n$-series and de Rham complexes",
-    "href": "https://sanathdevalapurkar.github.io/files/fgls-and-dR-complexes.pdf"
-  },
-  {
-    "authors": ["Devalapurkar", "Mondal"],
-    "tags": ["drw", "tr"],
-    "title": "$p$-typical curves on $p$-adic Tate twists and de Rham-Witt forms",
-    "href": "https://arxiv.org/abs/2309.16623"
-  },
+	"Devalapurkar",
+	{
+		"authors": ["Devalapurkar"],
+		"tags": ["hodge-de-rham"],
+		"title": "Lifting to truncated Brown-Peterson spectra and Hodge-de Rham degeneration in characteristic $p>0$",
+		"href": "https://arxiv.org/abs/2303.00739"
+	},
+	{
+		"authors": ["Devalapurkar"],
+		"tags": ["even", "major"],
+		"title": "Topological Hochschild homology, truncated Brown-Peterson spectra, and a topological Sen operator",
+		"href": "https://sanathdevalapurkar.github.io/files/thh-Xn.pdf"
+	},
+	{
+		"authors": ["Devalapurkar", "Hahn", "Lawson", "Senger", "Wilson"],
+		"tags": ["even"],
+		"title": "Examples of disk algebras",
+		"href": "https://arxiv.org/abs/2302.11702"
+	},
+	{
+		"authors": ["Devalapurkar", "Misterka"],
+		"tags": ["even", "formal-groups", "start"],
+		"title": "Generalized $n$-series and de Rham complexes",
+		"href": "https://sanathdevalapurkar.github.io/files/fgls-and-dR-complexes.pdf"
+	},
+	{
+		"authors": ["Devalapurkar", "Mondal"],
+		"tags": ["drw", "tr"],
+		"title": "$p$-typical curves on $p$-adic Tate twists and de Rham-Witt forms",
+		"href": "https://arxiv.org/abs/2309.16623"
+	},
 
-  "Dotto",
-  {
-    "authors": ["Dotto", "Krause", "Nikolaus", "Patchkoria"],
-    "tags": ["tr"],
-    "title": "Witt vectors with coefficients and characteristic polynomials over non-commutative rings",
-    "href": "https://arxiv.org/abs/2002.01538"
-  },
-  {
-    "authors": ["Dotto", "Krause", "Nikolaus", "Patchkoria"],
-    "tags": ["tr"],
-    "title": "Witt vectors with coefficients and TR",
-    "href": "https://arxiv.org/abs/2312.12971"
-  },
-  {
-    "authors": ["Dotto", "Moi", "Patchkoria", "Reeh"],
-    "tags": ["real"],
-    "title": "Real topological Hochschild homology",
-    "href": "https://arxiv.org/abs/1711.10226"
-  },
-  {
-    "authors": ["Dotto", "Moi", "Patchkoria"],
-    "tags": ["real"],
-    "title": "Witt Vectors, Polynomial Maps, and Real Topological Hochschild Homology",
-    "href": "https://arxiv.org/abs/1901.02195"
-  },
-  {
-    "authors": ["Dotto", "Moi", "Patchkoria"],
-    "tags": ["real"],
-    "title": "On the geometric fixed-points of real topological cyclic homology",
-    "href": "https://arxiv.org/abs/2106.04891"
-  },
+	"Dotto",
+	{
+		"authors": ["Dotto", "Krause", "Nikolaus", "Patchkoria"],
+		"tags": ["tr"],
+		"title": "Witt vectors with coefficients and characteristic polynomials over non-commutative rings",
+		"href": "https://arxiv.org/abs/2002.01538"
+	},
+	{
+		"authors": ["Dotto", "Krause", "Nikolaus", "Patchkoria"],
+		"tags": ["tr"],
+		"title": "Witt vectors with coefficients and TR",
+		"href": "https://arxiv.org/abs/2312.12971"
+	},
+	{
+		"authors": ["Dotto", "Moi", "Patchkoria", "Reeh"],
+		"tags": ["real"],
+		"title": "Real topological Hochschild homology",
+		"href": "https://arxiv.org/abs/1711.10226"
+	},
+	{
+		"authors": ["Dotto", "Moi", "Patchkoria"],
+		"tags": ["real"],
+		"title": "Witt Vectors, Polynomial Maps, and Real Topological Hochschild Homology",
+		"href": "https://arxiv.org/abs/1901.02195"
+	},
+	{
+		"authors": ["Dotto", "Moi", "Patchkoria"],
+		"tags": ["real"],
+		"title": "On the geometric fixed-points of real topological cyclic homology",
+		"href": "https://arxiv.org/abs/2106.04891"
+	},
 
-  "Drinfeld",
-  {
-    "authors": ["Drinfeld"],
-    "tags": ["stacky"],
-    "title": "Prismatization",
-    "href": "https://arxiv.org/abs/2005.04746"
-  },
-  {
-    "authors": ["Drinfeld"],
-    "tags": ["formal-groups", "stacky"],
-    "title": "A 1-dimensional formal group over the prismatization of $\\operatorname{Spf} \\Z_p$",
-    "href": "https://arxiv.org/abs/2107.11466"
-  },
+	"Drinfeld",
+	{
+		"authors": ["Drinfeld"],
+		"tags": ["stacky"],
+		"title": "Prismatization",
+		"href": "https://arxiv.org/abs/2005.04746"
+	},
+	{
+		"authors": ["Drinfeld"],
+		"tags": ["formal-groups", "stacky"],
+		"title": "A 1-dimensional formal group over the prismatization of $\\operatorname{Spf} \\Z_p$",
+		"href": "https://arxiv.org/abs/2107.11466"
+	},
 
-  "Elmanto",
-  {
-    "authors": ["Elmanto"],
-    "tags": ["big-picture", "notes"],
-    "title": "Motives at $p$",
-    "href": "https://scholar.harvard.edu/elden/classes/motives-p"
-  },
-  {
-    "authors": ["Elmanto", "Morrow"],
-    "tags": ["solve"],
-    "title": "Motivic cohomology of equicharacteristic schemes",
-    "href": "https://arxiv.org/abs/2309.08463"
-  },
-  {
-    "authors": ["Elmanto", "Riggenbach"],
-    "tags": ["calculation", "k"],
-    "title": "On the $K$-theory of the $p$-adic unit disk",
-    "href": "https://arxiv.org/abs/2410.07101"
-  },
+	"Elmanto",
+	{
+		"authors": ["Elmanto"],
+		"tags": ["big-picture", "notes"],
+		"title": "Motives at $p$",
+		"href": "https://scholar.harvard.edu/elden/classes/motives-p"
+	},
+	{
+		"authors": ["Elmanto", "Morrow"],
+		"tags": ["solve"],
+		"title": "Motivic cohomology of equicharacteristic schemes",
+		"href": "https://arxiv.org/abs/2309.08463"
+	},
+	{
+		"authors": ["Elmanto", "Riggenbach"],
+		"tags": ["calculation", "k"],
+		"title": "On the $K$-theory of the $p$-adic unit disk",
+		"href": "https://arxiv.org/abs/2410.07101"
+	},
 
-  "Gurney",
-  {
-    "authors": ["Gurney"],
-    "tags": ["stacky"],
-    "title": "Prismatization over $\\mathbf Z$",
-    "href": "https://arxiv.org/abs/2301.12392"
-  },
+	"Gurney",
+	{
+		"authors": ["Gurney"],
+		"tags": ["stacky"],
+		"title": "Prismatization over $\\mathbf Z$",
+		"href": "https://arxiv.org/abs/2301.12392"
+	},
 
-  "Hahn",
-  {
-    "authors": ["Hahn", "Levy", "Senger"],
-    "tags": ["calculation", "k", "stacky"],
-    "title": "Crystallinity for reduced syntomic cohomology and the mod $(p,v_1^{p^{n−2}})$ $K$-theory of $\\mathbb Z/p^n$",
-    "href": "https://arxiv.org/abs/2409.20543"
-  },
-  {
-    "authors": ["Hahn", "Wilson"],
-    "tags": ["real"],
-    "title": "Real topological Hochschild homology and the Segal conjecture",
-    "href": "https://arxiv.org/abs/1911.05687"
-  },
-  {
-    "authors": ["Hahn", "Wilson"],
-    "tags": ["even", "solve"],
-    "title": "Redshift and multiplication for truncated Brown-Peterson spectra",
-    "href": "https://arxiv.org/abs/2012.00864"
-  },
-  {
-    "authors": ["Hahn", "Raksit", "Wilson"],
-    "tags": ["even", "major"],
-    "title": "A motivic filtration on the topological cyclic homology of commutative ring spectra",
-    "href": "https://arxiv.org/abs/2206.11208"
-  },
+	"Hahn",
+	{
+		"authors": ["Hahn", "Levy", "Senger"],
+		"tags": ["calculation", "k", "stacky"],
+		"title": "Crystallinity for reduced syntomic cohomology and the mod $(p,v_1^{p^{n−2}})$ $K$-theory of $\\mathbb Z/p^n$",
+		"href": "https://arxiv.org/abs/2409.20543"
+	},
+	{
+		"authors": ["Hahn", "Wilson"],
+		"tags": ["real"],
+		"title": "Real topological Hochschild homology and the Segal conjecture",
+		"href": "https://arxiv.org/abs/1911.05687"
+	},
+	{
+		"authors": ["Hahn", "Wilson"],
+		"tags": ["even", "solve"],
+		"title": "Redshift and multiplication for truncated Brown-Peterson spectra",
+		"href": "https://arxiv.org/abs/2012.00864"
+	},
+	{
+		"authors": ["Hahn", "Raksit", "Wilson"],
+		"tags": ["even", "major"],
+		"title": "A motivic filtration on the topological cyclic homology of commutative ring spectra",
+		"href": "https://arxiv.org/abs/2206.11208"
+	},
 
-  "Hedenlund",
-  {
-    "authors": ["Hedenlund", "Moulinos"],
-    "tags": ["even", "formal-groups"],
-    "title": "The Synthetic Hilbert Additive Group Scheme",
-    "href": "https://arxiv.org/abs/2411.17441"
-  },
+	"Hedenlund",
+	{
+		"authors": ["Hedenlund", "Moulinos"],
+		"tags": ["even", "formal-groups"],
+		"title": "The Synthetic Hilbert Additive Group Scheme",
+		"href": "https://arxiv.org/abs/2411.17441"
+	},
 
-  "Hesselholt",
-  {
-    "authors": ["Hesselholt"],
-    "tags": ["fargues-fontaine"],
-    "title": "Topological cyclic homology and the Fargues-Fontaine curve",
-    "href": "https://arxiv.org/abs/2208.00168"
-  },
-  {
-    "authors": ["Hesselholt", "Nikolaus"],
-    "tags": ["thh", "start"],
-    "title": "Topological cyclic homology (Handbook article)",
-    "href": "http://web.math.ku.dk/~larsh/papers/s07/handbook.pdf"
-  },
+	"Hesselholt",
+	{
+		"authors": ["Hesselholt"],
+		"tags": ["fargues-fontaine"],
+		"title": "Topological cyclic homology and the Fargues-Fontaine curve",
+		"href": "https://arxiv.org/abs/2208.00168"
+	},
+	{
+		"authors": ["Hesselholt", "Nikolaus"],
+		"tags": ["thh", "start"],
+		"title": "Topological cyclic homology (Handbook article)",
+		"href": "http://web.math.ku.dk/~larsh/papers/s07/handbook.pdf"
+	},
 
-  "Holeman",
-  {
-    "authors": ["Holeman"],
-    "tags": ["prism"],
-    "title": "Derived $\\delta$-Rings and Relative Prismatic Cohomology",
-    "href": "https://arxiv.org/abs/2303.17447"
-  },
+	"Holeman",
+	{
+		"authors": ["Holeman"],
+		"tags": ["prism"],
+		"title": "Derived $\\delta$-Rings and Relative Prismatic Cohomology",
+		"href": "https://arxiv.org/abs/2303.17447"
+	},
 
-  "Hornbostel",
-  {
-    "authors": ["Hornbostel", "Park"],
-    "tags": ["real"],
-    "title": "Real topological Hochschild homology of schemes",
-    "href": "https://arxiv.org/abs/2209.12796"
-  },
-  {
-    "authors": ["Hornbostel", "Park"],
-    "tags": ["real"],
-    "title": "Real topological Hochschild homology of perfectoid rings",
-    "href": "https://arxiv.org/abs/2310.11183"
-  },
+	"Hornbostel",
+	{
+		"authors": ["Hornbostel", "Park"],
+		"tags": ["real"],
+		"title": "Real topological Hochschild homology of schemes",
+		"href": "https://arxiv.org/abs/2209.12796"
+	},
+	{
+		"authors": ["Hornbostel", "Park"],
+		"tags": ["real"],
+		"title": "Real topological Hochschild homology of perfectoid rings",
+		"href": "https://arxiv.org/abs/2310.11183"
+	},
 
-  "Hu",
-  {
-    "authors": ["Hu", "Kriz", "Somberg"],
-    "tags": ["calculation", "genuine"],
-    "title": "On the equivariant motivic filtration of the topological Hochschild homology of polynomial algebras",
-    "href": "https://arxiv.org/abs/2211.12381"
-  },
+	"Hu",
+	{
+		"authors": ["Hu", "Kriz", "Somberg"],
+		"tags": ["calculation", "genuine"],
+		"title": "On the equivariant motivic filtration of the topological Hochschild homology of polynomial algebras",
+		"href": "https://arxiv.org/abs/2211.12381"
+	},
 
-  "Kaledin",
-  {
-    "authors": ["Kaledin"],
-    "tags": ["big-picture"],
-    "title": "Kaledin ICM address",
-    "href": "https://arxiv.org/abs/1003.3210"
-  },
+	"Kaledin",
+	{
+		"authors": ["Kaledin"],
+		"tags": ["big-picture"],
+		"title": "Kaledin ICM address",
+		"href": "https://arxiv.org/abs/1003.3210"
+	},
 
-  "Kedlaya",
-  {
-    "authors": ["Kedlaya"],
-    "tags": ["notes", "prism"],
-    "title": "Notes on prismatic cohomology",
-    "href": "https://kskedlaya.org/prismatic/frontmatter-1.html"
-  },
+	"Kedlaya",
+	{
+		"authors": ["Kedlaya"],
+		"tags": ["notes", "prism"],
+		"title": "Notes on prismatic cohomology",
+		"href": "https://kskedlaya.org/prismatic/frontmatter-1.html"
+	},
 
-  "Keenan",
-  {
-    "authors": ["Keenan", "McCandless"],
-    "tags": ["tr"],
-    "title": "A chromatic vanishing result for TR",
-    "href": "https://arxiv.org/abs/2310.04388"
-  },
+	"Keenan",
+	{
+		"authors": ["Keenan", "McCandless"],
+		"tags": ["tr"],
+		"title": "A chromatic vanishing result for TR",
+		"href": "https://arxiv.org/abs/2310.04388"
+	},
 
-  "Kim",
-  {
-    "authors": ["Kim"],
-    "tags": ["cartier-smooth", "thh"],
-    "title": "Topological cyclic homology of Cartier smooth rings",
-    "href": "https://arxiv.org/abs/2306.01063"
-  },
+	"Kim",
+	{
+		"authors": ["Kim"],
+		"tags": ["cartier-smooth", "thh"],
+		"title": "Topological cyclic homology of Cartier smooth rings",
+		"href": "https://arxiv.org/abs/2306.01063"
+	},
 
-  "Koshikawa",
-  {
-    "authors": ["Koshikawa"],
-    "tags": ["log"],
-    "title": "Logarithmic Prismatic Cohomology I",
-    "href": "https://arxiv.org/abs/2007.14037"
-  },
-  {
-    "authors": ["Koshikawa", "Yao"],
-    "tags": ["log"],
-    "title": "Logarithmic prismatic cohomology II",
-    "href": "https://arxiv.org/abs/2306.00364"
-  },
+	"Koshikawa",
+	{
+		"authors": ["Koshikawa"],
+		"tags": ["log"],
+		"title": "Logarithmic Prismatic Cohomology I",
+		"href": "https://arxiv.org/abs/2007.14037"
+	},
+	{
+		"authors": ["Koshikawa", "Yao"],
+		"tags": ["log"],
+		"title": "Logarithmic prismatic cohomology II",
+		"href": "https://arxiv.org/abs/2306.00364"
+	},
 
-  "Krause",
-  {
-    "authors": ["Krause", "Nikolaus"],
-    "tags": ["thh"],
-    "title": "Bökstedt periodicity and quotients of DVRs",
-    "href": "https://arxiv.org/abs/1907.03477"
-  },
-  {
-    "authors": ["Krause", "Senger"],
-    "tags": ["k"],
-    "title": "Exact bounds for even vanishing of $K_*(\\mathbb Z/p^n)$",
-    "href": "https://arxiv.org/abs/2409.20523"
-  },
-  {
-    "authors": ["Krause", "Nikolaus"],
-    "tags": ["thh", "notes"],
-    "title": "Lectures on THH and cyclotomic spectra",
-    "href": "https://www.uni-muenster.de/IVV5WS/WebHop/user/nikolaus/Papers/Lectures.pdf"
-  },
-  {
-    "authors": ["Krause", "McCandless", "Nikolaus"],
-    "tags": ["tr"],
-    "title": "Polygonic spectra and TR with coefficients",
-    "href": "https://arxiv.org/abs/2302.07686"
-  },
+	"Krause",
+	{
+		"authors": ["Krause", "Nikolaus"],
+		"tags": ["thh"],
+		"title": "Bökstedt periodicity and quotients of DVRs",
+		"href": "https://arxiv.org/abs/1907.03477"
+	},
+	{
+		"authors": ["Krause", "Senger"],
+		"tags": ["k"],
+		"title": "Exact bounds for even vanishing of $K_*(\\mathbb Z/p^n)$",
+		"href": "https://arxiv.org/abs/2409.20523"
+	},
+	{
+		"authors": ["Krause", "Nikolaus"],
+		"tags": ["thh", "notes"],
+		"title": "Lectures on THH and cyclotomic spectra",
+		"href": "https://www.uni-muenster.de/IVV5WS/WebHop/user/nikolaus/Papers/Lectures.pdf"
+	},
+	{
+		"authors": ["Krause", "McCandless", "Nikolaus"],
+		"tags": ["tr"],
+		"title": "Polygonic spectra and TR with coefficients",
+		"href": "https://arxiv.org/abs/2302.07686"
+	},
 
-  "Lee",
-  {
-    "authors": ["Lee"],
-    "tags": ["calculation", "even"],
-    "title": "Integral topological Hochschild homology of connective complex K-theory",
-    "href": "https://arxiv.org/abs/2206.02411"
-  },
+	"Lee",
+	{
+		"authors": ["Lee"],
+		"tags": ["calculation", "even"],
+		"title": "Integral topological Hochschild homology of connective complex K-theory",
+		"href": "https://arxiv.org/abs/2206.02411"
+	},
 
-  "Li",
-  {
-    "authors": ["Li", "Mondal"],
-    "tags": ["dr"],
-    "title": "On endomorphisms of the de Rham cohomology functor",
-    "href": "https://arxiv.org/abs/2109.04303"
-  },
+	"Li",
+	{
+		"authors": ["Li", "Mondal"],
+		"tags": ["dr"],
+		"title": "On endomorphisms of the de Rham cohomology functor",
+		"href": "https://arxiv.org/abs/2109.04303"
+	},
 
-  "Liu",
-  {
-    "authors": ["Liu", "Wang"],
-    "tags": ["calculation"],
-    "title": "Topological Cyclic Homology of Local Fields",
-    "href": "https://arxiv.org/abs/2012.15014"
-  },
+	"Liu",
+	{
+		"authors": ["Liu", "Wang"],
+		"tags": ["calculation"],
+		"title": "Topological Cyclic Homology of Local Fields",
+		"href": "https://arxiv.org/abs/2012.15014"
+	},
 
-  "Lurie",
-  {
-    "authors": ["Lurie"],
-    "tags": ["fargues-fontaine", "notes"],
-    "title": "Lurie Fargues-Fontaine course",
-    "href": "https://www.math.ias.edu/~lurie/205.html"
-  },
+	"Lurie",
+	{
+		"authors": ["Lurie"],
+		"tags": ["fargues-fontaine", "notes"],
+		"title": "Lurie Fargues-Fontaine course",
+		"href": "https://www.math.ias.edu/~lurie/205.html"
+	},
 
-  "Magidson",
-  {
-    "authors": ["Magidson"],
-    "tags": ["tr"],
-    "title": "Witt vectors and $\\delta$-Cartier rings",
-    "href": "https://arxiv.org/abs/2409.03877"
-  },
+	"Magidson",
+	{
+		"authors": ["Magidson"],
+		"tags": ["tr"],
+		"title": "Witt vectors and $\\delta$-Cartier rings",
+		"href": "https://arxiv.org/abs/2409.03877"
+	},
 
-  "Manam",
-  {
-    "authors": ["Manam"],
-    "tags": ["formal-groups"],
-    "title": "On the Drinfeld formal group",
-    "href": "https://arxiv.org/abs/2403.02555"
-  },
+	"Manam",
+	{
+		"authors": ["Manam"],
+		"tags": ["formal-groups"],
+		"title": "On the Drinfeld formal group",
+		"href": "https://arxiv.org/abs/2403.02555"
+	},
 
-  "Mao",
-  {
-    "authors": ["Mao"],
-    "tags": ["dr"],
-    "title": "Revisiting derived crystalline cohomology",
-    "href": "https://arxiv.org/abs/2107.02921"
-  },
-  {
-    "authors": ["Mao"],
-    "tags": ["drw", "genuine"],
-    "title": "Noncommutative relative de Rham-Witt complex via the norm",
-    "href": "https://arxiv.org/abs/2410.05998"
-  },
-  {
-    "authors": ["Mao"],
-    "tags": ["genuine", "thh"],
-    "title": "Equivariant aspects of de-completing cyclic homology",
-    "href": "https://arxiv.org/abs/2410.05994"
-  },
-  {
-    "authors": ["Mao"],
-    "tags": ["thh"],
-    "title": "Perfectoid rings as Thom spectra",
-    "href": "https://arxiv.org/abs/2003.08697"
-  },
-  {
-    "authors": ["Mao"],
-    "tags": ["genuine", "drw"],
-    "title": "Prismatic logarithm and prismatic Hochschild homology via norm",
-    "href": "https://arxiv.org/abs/2409.04400"
-  },
+	"Mao",
+	{
+		"authors": ["Mao"],
+		"tags": ["dr"],
+		"title": "Revisiting derived crystalline cohomology",
+		"href": "https://arxiv.org/abs/2107.02921"
+	},
+	{
+		"authors": ["Mao"],
+		"tags": ["drw", "genuine"],
+		"title": "Noncommutative relative de Rham-Witt complex via the norm",
+		"href": "https://arxiv.org/abs/2410.05998"
+	},
+	{
+		"authors": ["Mao"],
+		"tags": ["genuine", "thh"],
+		"title": "Equivariant aspects of de-completing cyclic homology",
+		"href": "https://arxiv.org/abs/2410.05994"
+	},
+	{
+		"authors": ["Mao"],
+		"tags": ["thh"],
+		"title": "Perfectoid rings as Thom spectra",
+		"href": "https://arxiv.org/abs/2003.08697"
+	},
+	{
+		"authors": ["Mao"],
+		"tags": ["genuine", "drw"],
+		"title": "Prismatic logarithm and prismatic Hochschild homology via norm",
+		"href": "https://arxiv.org/abs/2409.04400"
+	},
 
-  "Mathew",
-  {
-    "authors": ["Mathew"],
-    "tags": ["start", "thh"],
-    "title": "Some recent advances in topological Hochschild homology",
-    "href": "https://arxiv.org/abs/2101.00668"
-  },
-  {
-    "authors": ["Mathew"],
-    "tags": ["hodge-de-rham"],
-    "title": "Kaledin's degeneration theorem and topological Hochschild homology",
-    "href": "https://arxiv.org/abs/1710.09045"
-  },
-  {
-    "authors": ["Mathew"],
-    "tags": ["tr"],
-    "title": "On $K(1)$-local $\\mathrm{TR}$",
-    "href": "https://arxiv.org/abs/2005.08744"
-  },
+	"Mathew",
+	{
+		"authors": ["Mathew"],
+		"tags": ["start", "thh"],
+		"title": "Some recent advances in topological Hochschild homology",
+		"href": "https://arxiv.org/abs/2101.00668"
+	},
+	{
+		"authors": ["Mathew"],
+		"tags": ["hodge-de-rham"],
+		"title": "Kaledin's degeneration theorem and topological Hochschild homology",
+		"href": "https://arxiv.org/abs/1710.09045"
+	},
+	{
+		"authors": ["Mathew"],
+		"tags": ["tr"],
+		"title": "On $K(1)$-local $\\mathrm{TR}$",
+		"href": "https://arxiv.org/abs/2005.08744"
+	},
 
-  "McCandless",
-  {
-    "authors": ["McCandless"],
-    "tags": ["tr"],
-    "title": "On curves in $\\mathrm K$-theory and $\\mathrm{TR}$",
-    "href": "https://arxiv.org/abs/2102.08281"
-  },
+	"McCandless",
+	{
+		"authors": ["McCandless"],
+		"tags": ["tr"],
+		"title": "On curves in $\\mathrm K$-theory and $\\mathrm{TR}$",
+		"href": "https://arxiv.org/abs/2102.08281"
+	},
 
-  "Meyer",
-  {
-    "authors": ["Meyer", "Wagner"],
-    "tags": ["major"],
-    "title": "Derived $q$-Hodge complexes and refined $\\mathrm{TC}^-$",
-    "href": "https://arxiv.org/abs/2410.23115"
-  },
+	"Meyer",
+	{
+		"authors": ["Meyer", "Wagner"],
+		"tags": ["major"],
+		"title": "Derived $q$-Hodge complexes and refined $\\mathrm{TC}^-$",
+		"href": "https://arxiv.org/abs/2410.23115"
+	},
 
-  "Molokov",
-  {
-    "authors": ["Molokov"],
-    "tags": ["drw"],
-    "title": "Prismatic cohomology and de Rham-Witt forms",
-    "href": "https://arxiv.org/abs/2008.04956"
-  },
+	"Molokov",
+	{
+		"authors": ["Molokov"],
+		"tags": ["drw"],
+		"title": "Prismatic cohomology and de Rham-Witt forms",
+		"href": "https://arxiv.org/abs/2008.04956"
+	},
 
-  "Mondal",
-  {
-    "authors": ["Mondal"],
-    "tags": ["formal-groups", "tr"],
-    "title": "Dieudonné theory via cohomology of classifying stacks",
-    "href": "https://arxiv.org/abs/2002.05413"
-  },
-  {
-    "authors": ["Mondal"],
-    "tags": ["dr"],
-    "title": "$\\mathbb G_a^{\\mathrm{perf}}$-modules and de Rham cohomology",
-    "href": "https://arxiv.org/abs/2101.03146"
-  },
-  {
-    "authors": ["Mondal"],
-    "tags": ["start", "stacky"],
-    "title": "Reconstruction of the stacky approach to de Rham cohomology",
-    "href": "http://www-personal.umich.edu/~smondal/papers/the-stacky-approach.pdf"
-  },
-  {
-    "authors": ["Mondal", "Reinecke"],
-    "tags": ["formal-groups", "major"],
-    "title": "Unipotent homotopy theory of schemes",
-    "href": "https://arxiv.org/abs/2302.10703"
-  },
+	"Mondal",
+	{
+		"authors": ["Mondal"],
+		"tags": ["formal-groups", "tr"],
+		"title": "Dieudonné theory via cohomology of classifying stacks",
+		"href": "https://arxiv.org/abs/2002.05413"
+	},
+	{
+		"authors": ["Mondal"],
+		"tags": ["dr"],
+		"title": "$\\mathbb G_a^{\\mathrm{perf}}$-modules and de Rham cohomology",
+		"href": "https://arxiv.org/abs/2101.03146"
+	},
+	{
+		"authors": ["Mondal"],
+		"tags": ["start", "stacky"],
+		"title": "Reconstruction of the stacky approach to de Rham cohomology",
+		"href": "http://www-personal.umich.edu/~smondal/papers/the-stacky-approach.pdf"
+	},
+	{
+		"authors": ["Mondal", "Reinecke"],
+		"tags": ["formal-groups", "major"],
+		"title": "Unipotent homotopy theory of schemes",
+		"href": "https://arxiv.org/abs/2302.10703"
+	},
 
-  "Morrow",
-  {
-    "authors": ["Morrow"],
-    "tags": ["notes", "thh"],
-    "title": "THH in arithmetic geometry (AWS 2019)",
-    "href": "https://www.math.arizona.edu/~swc/aws/2019/2019MorrowNotes.pdf"
-  },
+	"Morrow",
+	{
+		"authors": ["Morrow"],
+		"tags": ["notes", "thh"],
+		"title": "THH in arithmetic geometry (AWS 2019)",
+		"href": "https://www.math.arizona.edu/~swc/aws/2019/2019MorrowNotes.pdf"
+	},
 
-  "Moulinos",
-  {
-    "authors": ["Moulinos"],
-    "tags": ["formal-groups"],
-    "title": "Filtered formal groups, Cartier duality, and derived algebraic geometry",
-    "href": "https://arxiv.org/abs/2101.10262"
-  },
-  {
-    "authors": ["Moulinos"],
-    "tags": ["formal-groups"],
-    "title": "The geometry of filtrations",
-    "href": "https://arxiv.org/abs/1907.13562"
-  },
-  {
-    "authors": ["Moulinos", "Robalo", "Toën"],
-    "tags": ["formal-groups"],
-    "title": "A universal HKR theorem",
-    "href": "https://arxiv.org/abs/1906.00118"
-  },
+	"Moulinos",
+	{
+		"authors": ["Moulinos"],
+		"tags": ["formal-groups"],
+		"title": "Filtered formal groups, Cartier duality, and derived algebraic geometry",
+		"href": "https://arxiv.org/abs/2101.10262"
+	},
+	{
+		"authors": ["Moulinos"],
+		"tags": ["formal-groups"],
+		"title": "The geometry of filtrations",
+		"href": "https://arxiv.org/abs/1907.13562"
+	},
+	{
+		"authors": ["Moulinos", "Robalo", "Toën"],
+		"tags": ["formal-groups"],
+		"title": "A universal HKR theorem",
+		"href": "https://arxiv.org/abs/1906.00118"
+	},
 
-  "Nikolaus",
-  {
-    "authors": ["Nikolaus", "Scholze"],
-    "tags": ["thh", "major"],
-    "title": "Nikolaus-Scholze",
-    "href": "https://arxiv.org/abs/1707.01799"
-  },
+	"Nikolaus",
+	{
+		"authors": ["Nikolaus", "Scholze"],
+		"tags": ["thh", "major"],
+		"title": "Nikolaus-Scholze",
+		"href": "https://arxiv.org/abs/1707.01799"
+	},
 
-  "Park",
-  {
-    "authors": ["Park"],
-    "tags": ["real"],
-    "title": "Motivic real topological Hochschild spectrum",
-    "href": "https://arxiv.org/abs/2305.04150"
-  },
-  {
-    "authors": ["Park"],
-    "tags": ["real"],
-    "title": "Syntomic cohomology and real topological cyclic homology",
-    "href": "https://arxiv.org/abs/2311.06593"
-  },
+	"Park",
+	{
+		"authors": ["Park"],
+		"tags": ["real"],
+		"title": "Motivic real topological Hochschild spectrum",
+		"href": "https://arxiv.org/abs/2305.04150"
+	},
+	{
+		"authors": ["Park"],
+		"tags": ["real"],
+		"title": "Syntomic cohomology and real topological cyclic homology",
+		"href": "https://arxiv.org/abs/2311.06593"
+	},
 
-  "Petrov",
-  {
-    "authors": ["Petrov"],
-    "tags": ["hodge-de-rham", "solve"],
-    "title": "Non-decomposability of the de Rham complex and non-semisimplicity of the Sen operator",
-    "href": "https://arxiv.org/abs/2302.11389"
-  },
+	"Petrov",
+	{
+		"authors": ["Petrov"],
+		"tags": ["hodge-de-rham", "solve"],
+		"title": "Non-decomposability of the de Rham complex and non-semisimplicity of the Sen operator",
+		"href": "https://arxiv.org/abs/2302.11389"
+	},
 
-  "Pstrągowski",
-  {
-    "authors": ["Pstrągowski"],
-    "tags": ["even", "major"],
-    "title": "Perfect even modules and the even filtration",
-    "href": "https://arxiv.org/abs/2304.04685"
-  },
+	"Pstrągowski",
+	{
+		"authors": ["Pstrągowski"],
+		"tags": ["even", "major"],
+		"title": "Perfect even modules and the even filtration",
+		"href": "https://arxiv.org/abs/2304.04685"
+	},
 
-  "Raksit",
-  {
-    "authors": ["Raksit"],
-    "tags": ["dr"],
-    "title": "Hochschild homology and the derived de Rham complex revisited",
-    "href": "https://arxiv.org/abs/2007.02576"
-  },
+	"Raksit",
+	{
+		"authors": ["Raksit"],
+		"tags": ["dr"],
+		"title": "Hochschild homology and the derived de Rham complex revisited",
+		"href": "https://arxiv.org/abs/2007.02576"
+	},
 
-  "Riggenbach",
-  {
-    "authors": ["Riggenbach"],
-    "tags": ["calculation", "k"],
-    "title": "On The Algebraic $K$-Theory of Double Points",
-    "href": "https://arxiv.org/abs/2007.01227"
-  },
-  {
-    "authors": ["Riggenbach"],
-    "tags": ["calculation", "k"],
-    "title": "$K$-Theory of Cuspidal Curves Over a Perfectoid Base And Formal Analogues",
-    "href": "https://arxiv.org/abs/2203.17136"
-  },
-  {
-    "authors": ["Riggenbach"],
-    "tags": ["calculation", "cartier-smooth", "k", "tr"],
-    "title": "$K$-Theory of Truncated Polynomials",
-    "href": "https://arxiv.org/abs/2211.11110"
-  },
+	"Riggenbach",
+	{
+		"authors": ["Riggenbach"],
+		"tags": ["calculation", "k"],
+		"title": "On The Algebraic $K$-Theory of Double Points",
+		"href": "https://arxiv.org/abs/2007.01227"
+	},
+	{
+		"authors": ["Riggenbach"],
+		"tags": ["calculation", "k"],
+		"title": "$K$-Theory of Cuspidal Curves Over a Perfectoid Base And Formal Analogues",
+		"href": "https://arxiv.org/abs/2203.17136"
+	},
+	{
+		"authors": ["Riggenbach"],
+		"tags": ["calculation", "cartier-smooth", "k", "tr"],
+		"title": "$K$-Theory of Truncated Polynomials",
+		"href": "https://arxiv.org/abs/2211.11110"
+	},
 
-  "Scholze",
-  {
-    "authors": ["Scholze"],
-    "tags": ["big-picture", "start"],
-    "title": "Scholze ICM address",
-    "href": "https://arxiv.org/abs/1712.03708"
-  },
-  {
-    "authors": ["Scholze"],
-    "tags": ["start", "prism"],
-    "title": "Canonical $q$-deformations in arithmetic geometry",
-    "href": "https://arxiv.org/abs/1606.01796"
-  },
+	"Scholze",
+	{
+		"authors": ["Scholze"],
+		"tags": ["big-picture", "start"],
+		"title": "Scholze ICM address",
+		"href": "https://arxiv.org/abs/1712.03708"
+	},
+	{
+		"authors": ["Scholze"],
+		"tags": ["start", "prism"],
+		"title": "Canonical $q$-deformations in arithmetic geometry",
+		"href": "https://arxiv.org/abs/1606.01796"
+	},
 
-  "Speirs",
-  {
-    "authors": ["Speirs"],
-    "tags": ["calculation", "k"],
-    "title": "On the K-theory of truncated polynomial algebras, revisited",
-    "href": "https://arxiv.org/abs/1901.10602"
-  },
-  {
-    "authors": ["Speirs"],
-    "tags": ["calculation", "k"],
-    "title": "On the K-theory of coordinate axes in affine space",
-    "href": "https://arxiv.org/abs/1901.08550"
-  },
+	"Speirs",
+	{
+		"authors": ["Speirs"],
+		"tags": ["calculation", "k"],
+		"title": "On the K-theory of truncated polynomial algebras, revisited",
+		"href": "https://arxiv.org/abs/1901.10602"
+	},
+	{
+		"authors": ["Speirs"],
+		"tags": ["calculation", "k"],
+		"title": "On the K-theory of coordinate axes in affine space",
+		"href": "https://arxiv.org/abs/1901.08550"
+	},
 
-  "Sulyma",
-  {
-    "authors": ["Sulyma"],
-    "tags": ["calculation", "k"],
-    "title": "Floor, ceiling, slopes, and $K$-theory",
-    "href": "https://arxiv.org/abs/2110.04978"
-  },
-  {
-    "authors": ["Sulyma"],
-    "tags": ["calculation", "genuine"],
-    "title": "A slice refinement of Bökstedt periodicity",
-    "href": "https://arxiv.org/abs/2007.13817"
-  },
-  {
-    "authors": ["Sulyma"],
-    "tags": ["calculation", "genuine"],
-    "title": "\\(\\mathrm{RO}(\\mathbb T)\\)-graded \\(\\mathrm{TF}\\) of perfectoid rings",
-    "href": "https://arxiv.org/abs/2205.12151"
-  },
-  {
-    "authors": ["Sulyma"],
-    "tags": ["drw", "genuine", "major"],
-    "title": "Prisms and Tambara functors I: Twisted powers, transversality, and the perfect sandwich",
-    "href": "https://arxiv.org/abs/2309.03181"
-  },
+	"Sulyma",
+	{
+		"authors": ["Sulyma"],
+		"tags": ["calculation", "k"],
+		"title": "Floor, ceiling, slopes, and $K$-theory",
+		"href": "https://arxiv.org/abs/2110.04978"
+	},
+	{
+		"authors": ["Sulyma"],
+		"tags": ["calculation", "genuine"],
+		"title": "A slice refinement of Bökstedt periodicity",
+		"href": "https://arxiv.org/abs/2007.13817"
+	},
+	{
+		"authors": ["Sulyma"],
+		"tags": ["calculation", "genuine"],
+		"title": "\\(\\mathrm{RO}(\\mathbb T)\\)-graded \\(\\mathrm{TF}\\) of perfectoid rings",
+		"href": "https://arxiv.org/abs/2205.12151"
+	},
+	{
+		"authors": ["Sulyma"],
+		"tags": ["drw", "genuine", "major"],
+		"title": "Prisms and Tambara functors I: Twisted powers, transversality, and the perfect sandwich",
+		"href": "https://arxiv.org/abs/2309.03181"
+	},
 
-  "misc",
-  {
-    "authors": [],
-    "tags": ["stacky", "thh"],
-    "title": "Oberwolfach prismatization seminar",
-    "href": "http://web.math.ku.dk/~larsh/papers/s09/oberwolfachseminar.pdf"
-  },
+	"Yang",
+	{
+		"authors": ["Yang"],
+		"tags": ["real"],
+		"title": "A filtered Hochschild-Kostant-Rosenberg theorem for real Hochschild homology",
+		"href": "https://arxiv.org/abs/2503.03024"
+	},
 
-  {
-    "authors": [],
-    "tags": ["fargues-fontaine"],
-    "title": "Arbeitsgemeinschaft: Geometric Langlands, Perfectoid Spaces, and the Fargues-Fontaine Curve",
-    "href": "https://www.math.ias.edu/~lurie/ffcurve/Arbeitsgemeinschaft2016GL.pdf"
-  },
-  {
-    "authors": [],
-    "tags": ["fargues-fontaine"],
-    "title": "Lurie Fargues-Fontaine seminar",
-    "href": "https://www.math.ias.edu/~lurie/FF.html",
-    "comment": "especially Lecture 1 is inspiring"
-  },
-  {
-    "authors": [],
-    "tags": ["thh"],
-    "title": "Arbeitsgemeinschaft: Topological cyclic homology",
-    "href": "https://publications.mfo.de/bitstream/handle/mfo/3637/OWR_2018_15.pdf?sequence=1&isAllowed=y"
-  }
+	"misc",
+	{
+		"authors": [],
+		"tags": ["stacky", "thh"],
+		"title": "Oberwolfach prismatization seminar",
+		"href": "http://web.math.ku.dk/~larsh/papers/s09/oberwolfachseminar.pdf"
+	},
+
+	{
+		"authors": [],
+		"tags": ["fargues-fontaine"],
+		"title": "Arbeitsgemeinschaft: Geometric Langlands, Perfectoid Spaces, and the Fargues-Fontaine Curve",
+		"href": "https://www.math.ias.edu/~lurie/ffcurve/Arbeitsgemeinschaft2016GL.pdf"
+	},
+	{
+		"authors": [],
+		"tags": ["fargues-fontaine"],
+		"title": "Lurie Fargues-Fontaine seminar",
+		"href": "https://www.math.ias.edu/~lurie/FF.html",
+		"comment": "especially Lecture 1 is inspiring"
+	},
+	{
+		"authors": [],
+		"tags": ["thh"],
+		"title": "Arbeitsgemeinschaft: Topological cyclic homology",
+		"href": "https://publications.mfo.de/bitstream/handle/mfo/3637/OWR_2018_15.pdf?sequence=1&isAllowed=y"
+	}
 ]
