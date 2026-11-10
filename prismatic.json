@@ -720,6 +720,26 @@
       "Hauck"
     ],
     "tags": [
+      "stacky"
+    ],
+    "title": "A stacky approach to \\(p\\)-adic Hodge theory",
+    "href": "https://arxiv.org/abs/2409.10557"
+  },
+  {
+    "authors": [
+      "Hauck"
+    ],
+    "tags": [
+      "stacky"
+    ],
+    "title": "A stacky comparison of the Hodge and Nygaard filtrations",
+    "href": "https://arxiv.org/abs/2505.03546"
+  },
+  {
+    "authors": [
+      "Hauck"
+    ],
+    "tags": [
       "analytic",
       "fargues-fontaine",
       "stacky"
