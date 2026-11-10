@@ -1460,10 +1460,32 @@
     ],
     "tags": [
       "analytic",
-      "even"
+      "even",
+      "genuine",
+      "habiro"
     ],
     "title": "\\(q\\)-de Rham cohomology and topological Hochschild homology over \\(\\mathrm{ku}\\)",
     "href": "https://arxiv.org/abs/2510.06057"
+  },
+  {
+    "authors": [
+      "Wagner"
+    ],
+    "tags": [
+      "habiro"
+    ],
+    "title": "\\(q\\)-Hodge complexes over the Habiro ring",
+    "href": "https://arxiv.org/abs/2510.04782"
+  },
+  {
+    "authors": [
+      "Wagner"
+    ],
+    "tags": [
+      "habiro"
+    ],
+    "title": "\\(q\\)-Witt vectors and \\(q\\)-Hodge complexes",
+    "href": "https://arxiv.org/abs/2410.23078"
   },
   "Yang",
   {
