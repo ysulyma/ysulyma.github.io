@@ -1177,6 +1177,19 @@
   {
     "authors": [
       "Mondal",
+      "Moulinos",
+      "Yang"
+    ],
+    "tags": [
+      "formal-groups",
+      "major"
+    ],
+    "title": "Artin-Mazur formal groups and Milne duality via unipotent spectra",
+    "href": "https://arxiv.org/abs/2510.06152"
+  },
+  {
+    "authors": [
+      "Mondal",
       "Reinecke"
     ],
     "tags": [
