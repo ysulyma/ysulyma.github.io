@@ -213,6 +213,11 @@
 
         for (const element of $$(`img[data-icon="${key}"]`)) {
           const svgElt = $h(svg);
+          if (!svgElt?.setAttribute) {
+            console.error(`Failed to parse SVG for icon ${key}`);
+            continue;
+          }
+
           svgElt.setAttribute(
             "class",
             `prismatic-tag-icon prismatic-tag-${key}`,
@@ -330,6 +335,11 @@
                     const div = $el("div");
                     div.innerHTML = tagIcons[tag].svg;
                     const svg = div.firstChild;
+
+                    if (!svg?.setAttribute) {
+                      console.error(`failed on ${tag}`);
+                      return;
+                    }
 
                     svg.setAttribute("alt", tagIcons[tag].alt);
                     svg.setAttribute("title", tagIcons[tag].alt);
