@@ -117,6 +117,7 @@
     ],
     "tags": [
       "analytic",
+      "fargues-fontaine",
       "major",
       "stacky"
     ],
@@ -712,6 +713,19 @@
     ],
     "title": "A motivic filtration on the topological cyclic homology of commutative ring spectra",
     "href": "https://arxiv.org/abs/2206.11208"
+  },
+  "Hauck",
+  {
+    "authors": [
+      "Hauck"
+    ],
+    "tags": [
+      "analytic",
+      "fargues-fontaine",
+      "stacky"
+    ],
+    "title": "Rational analytic syntomic cohomology",
+    "href": "https://arxiv.org/abs/2604.15193"
   },
   "Hedenlund",
   {
