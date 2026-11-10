@@ -19,7 +19,7 @@
   const $h = (innerHTML) => {
     const div = $el("div");
     div.innerHTML = innerHTML;
-    return div.firstChild;
+    return div.firstElementChild;
   };
 
   const tagNames = {
@@ -209,7 +209,7 @@
             ? iconPath
             : `/assets/phosphor/${iconPath}.svg`,
         ).then((res) => res.text());
-        svg = svg.replace(/<\?xml[^>]*>/, "");
+        svg = svg.replace(/<\?xml[^>]*>/, "").trim();
 
         for (const element of $$(`img[data-icon="${key}"]`)) {
           const svgElt = $h(svg);
