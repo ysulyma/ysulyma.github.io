@@ -68,6 +68,11 @@
       icon: "number-square-one-fill",
     },
 
+    analytic: {
+      alt: "analytic",
+      color: "cyan",
+      icon: "cpu-fill",
+    },
     calculation: {
       alt: "calculation",
       color: "red",
