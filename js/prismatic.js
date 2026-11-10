@@ -113,6 +113,11 @@
       color: "forestgreen",
       icon: "google-logo",
     },
+    habiro: {
+      alt: "Habiro",
+      color: "forestgreen",
+      icon: "habiro",
+    },
     "hodge-de-rham": {
       alt: "Hodge to de Rham degeneration",
       color: "darkturquoise",
