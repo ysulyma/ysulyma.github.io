@@ -116,7 +116,7 @@
     habiro: {
       alt: "Habiro",
       color: "forestgreen",
-      icon: "habiro",
+      icon: "/assets/habiro.svg",
     },
     "hodge-de-rham": {
       alt: "Hodge to de Rham degeneration",
