@@ -1230,6 +1230,20 @@
     "title": "Nikolaus-Scholze",
     "href": "https://arxiv.org/abs/1707.01799"
   },
+  {
+    "authors": [
+      "Ong",
+      "Scholze"
+    ],
+    "tags": [
+      "analytic",
+      "habiro",
+      "notes",
+      "major"
+    ],
+    "title": "Habiro cohomology",
+    "href": "https://wgabrielong.github.io/academic-writing/notes/bonn-summer-25/V5A4-Habiro-Cohomology/Habiro_Cohomology_Notes.pdf"
+  },
   "Park",
   {
     "authors": [
@@ -1439,6 +1453,18 @@
     "title": "\\(\\mathrm{RO}(G)\\)-graded norms for de Rham-Witt forms",
     "href": "https://arxiv.org/abs/2611.12043"
   },
+  "Wagner",
+  {
+    "authors": [
+      "Wagner"
+    ],
+    "tags": [
+      "analytic",
+      "even"
+    ],
+    "title": "\\(q\\)-de Rham cohomology and topological Hochschild homology over \\(\\mathrm{ku}\\)",
+    "href": "https://arxiv.org/abs/2510.06057"
+  },
   "Yang",
   {
     "authors": [
@@ -1449,6 +1475,18 @@
     ],
     "title": "A filtered Hochschild-Kostant-Rosenberg theorem for real Hochschild homology",
     "href": "https://arxiv.org/abs/2503.03024"
+  },
+  "Zhang",
+  {
+    "authors": [
+      "Zhang"
+    ],
+    "tags": [
+      "drw",
+      "stacky"
+    ],
+    "title": "The stacky approach to de Rham-Witt cohomology",
+    "href": "https://arxiv.org/abs/2610.28149"
   },
   "misc",
   {
